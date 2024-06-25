@@ -1,4 +1,25 @@
-  const Situation = document.getElementById('marie_selected');
+  // Form validation script
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
+
+
+const Situation = document.getElementById('marie_selected');
   const Situation1 = document.getElementById('divorce_selected');
   Situation.style.display = 'none';
   Situation1.style.display = 'none';
@@ -1017,12 +1038,14 @@ const optionMapping = {
 gradefr.addEventListener('change', function() {
   const selectedFrenchOption = this.value;
   const correspondingArabicOption = optionMapping[selectedFrenchOption];
-
+  var hiddenAr = document.getElementById('hidden-ar');
   if (correspondingArabicOption) {
       gradear.value = correspondingArabicOption;
       gradear.disabled= true;
+      hiddenAr.value = gradear.value ;
   } else {
       gradear.value = '';
+      
   }
 });
 divisionfr.addEventListener('change', function() {
@@ -1058,3 +1081,103 @@ bureaufr.addEventListener('change', function() {
       bureauar.value = '';
   }
 });
+
+
+
+
+
+
+
+
+
+function validateForm() {
+    // Get all input elements
+    var inputs = document.querySelectorAll("input[required], textarea[required], select[required]");
+    var valid = true;
+    
+    // Loop through each input element
+    inputs.forEach(function(input) {
+        // Check if the input value is empty
+        if (input.value.trim() === "") {
+            // Mark the form as invalid
+            valid = false;
+            // Add an error message (you can customize the styling)
+            input.nextElementSibling.textContent = "This field is required";
+            input.nextElementSibling.style.color = "red";
+        } else {
+            // Clear the error message if the field is valid
+            input.nextElementSibling.textContent = "";
+        }
+    });
+
+    // Return the validity status
+    return valid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

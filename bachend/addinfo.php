@@ -11,40 +11,49 @@ if(isset($_POST["subm"])){
     $sexe = $_POST["sexe"];
     $sexe_ar = $_POST["sexe_ar"];
     $lieu_Nai_fr = $_POST["lieu_Nai_fr"];
-    $lieu_Nai_ar = $_POST["lieu_Nai_ar"];
+    $lieu_Nai_ar = $_POST["Lieu_Nai_ar"];
     $date_naissance = $_POST["date_naissance"];
     $situation_familiale = $_POST["situation_familiale"];
-    $marie_prenom_fr = $_POST["marie_prenom_fr"];
-    $marie_prenom_ar = $_POST["marie_prenom_ar"];
-    $marie_nom_fr = $_POST["marie_nom_fr"];
-    $marie_nom_ar = $_POST["marie_nom_ar"];
-    $marie_cnie = $_POST["marie_cnie"];
-    $marie_nbrenf = $_POST["marie_nbrenf"];
-    $marie_enf_prenom_fr = $_POST["marie_enf_prenom_fr"];
-    $marie_enf_prenom_ar = $_POST["marie_enf_prenom_ar"];
-    $marie_enf_nom_fr = $_POST["marie_enf_nom_fr"];
-    $marie_enf_nom_ar = $_POST["marie_enf_nom_ar"];
-    $marie_enf_sex_fr = $_POST["marie_enf_sex_fr"];
-    $marie_enf_sex_ar = $_POST["marie_enf_sex_ar"];
-    $marie_enf_lieu_Nai_fr = $_POST["marie_enf_lieu_Nai_fr"];
-    $marie_enf_lieu_Nai_ar = $_POST["marie_enf_lieu_Nai_ar"];
-    $marie_enf_date_naissance = $_POST["marie_enf_date_naissance"];
+    if($situation_familiale === 'Marie') {
+        $marie_prenom_fr = $_POST["marie_prenom_fr"];
+        $marie_prenom_ar = $_POST["marie_prenom_ar"];
+        $marie_nom_fr = $_POST["marie_nom_fr"];
+        $marie_nom_ar = $_POST["marie_nom_ar"];
+        $marie_cnie = $_POST["marie_cnie"];
+        $marie_nbrenf = $_POST["marie_nbrenf"];
+        if ($marie_nbrenf > 0) {
+        $marie_enf_prenom_fr = $_POST["marie_enf_prenom_fr"];
+        $marie_enf_prenom_ar = $_POST["marie_enf_prenom_ar"];
+        $marie_enf_nom_fr = $_POST["marie_enf_nom_fr"];
+        $marie_enf_nom_ar = $_POST["marie_enf_nom_ar"];
+        $marie_enf_sex_fr = $_POST["marie_enf_sex_fr"];
+        $marie_enf_sex_ar = $_POST["marie_enf_sex_ar"];
+        $marie_enf_lieu_Nai_fr = $_POST["marie_enf_lieu_Nai_fr"];
+        $marie_enf_lieu_Nai_ar = $_POST["marie_enf_lieu_Nai_ar"];
+        $marie_enf_date_naissance = $_POST["marie_enf_date_naissance"];
+        }
+
+    }
+    if ($situation_familiale ==='divorce') {
     $divorce_nbrenf1 = $_POST["divorce_nbrenf1"];
-    $divorce_enf_prenom_fr = $_POST["divorce_enf_prenom_fr"];
-    $divorce_enf_prenom_ar = $_POST["divorce_enf_prenom_ar"];
-    $divorce_enf_nom_fr = $_POST["divorce_enf_nom_fr"];
-    $divorce_enf_nom_ar = $_POST["divorce_enf_nom_ar"];
-    $divorce_enf_sexe_fr = $_POST["divorce_enf_sexe_fr"];
-    $divorce_enf_sexe_ar = $_POST["divorce_enf_sexe_ar"];
-    $divorce_enf_lieu_Nai_fr = $_POST["divorce_enf_lieu_Nai_fr"];
-    $divorce_enf_lieu_Nai_ar = $_POST["divorce_enf_lieu_Nai_ar"];
-    $divorce_enf_date_naissance = $_POST["divorce_enf_date_naissance"];
+    if ($divorce_nbrenf1 > 0) {
+        $divorce_enf_prenom_fr = $_POST["divorce_enf_prenom_fr"];
+        $divorce_enf_prenom_ar = $_POST["divorce_enf_prenom_ar"];
+        $divorce_enf_nom_fr = $_POST["divorce_enf_nom_fr"];
+        $divorce_enf_nom_ar = $_POST["divorce_enf_nom_ar"];
+        $divorce_enf_sexe_fr = $_POST["divorce_enf_sexe_fr"];
+        $divorce_enf_sexe_ar = $_POST["divorce_enf_sexe_ar"];
+        $divorce_enf_lieu_Nai_fr = $_POST["divorce_enf_lieu_Nai_fr"];
+        $divorce_enf_lieu_Nai_ar = $_POST["divorce_enf_lieu_Nai_ar"];
+        $divorce_enf_date_naissance = $_POST["divorce_enf_date_naissance"];
+    }
+    }
     $diplome = $_POST["diplome"];
     $specialite = $_POST["specialite"];
     //etat administratif
     $date_recrutement = $_POST["date_recrutement"];
     $grade_fr = $_POST["grade_fr"];
-    $grade_ar = $_POST["grade_ar"];
+    $grade_ar = $_POST["Grade_ar"];
     $echelle = $_POST["echelle"];
     $date_echelle = $_POST["date_echelle"];
     $echelon = $_POST["echelon"];

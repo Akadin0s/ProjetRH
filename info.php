@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +22,7 @@
     </div>
   </nav>
   <div class="container">
-    <form class="well form-horizontal" action="bachend/addinfo.php" method="post" id="contact_form">
+    <form class="well form-horizontal " action="bachend/addinfo.php" method="post" id="contact_form "onsubmit="return validateForm()">
       <fieldset>
         <!-- Form Name -->
         <legend>
@@ -33,13 +34,13 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">N°CNIE</label>
               <div>
-                <input name="cnie" id="cnie" placeholder="N°CNIE" class="form-control" type="text" />
+                <input name="cnie" id="cnie" placeholder="N°CNIE" class="form-control" type="text" required/>
               </div>
             </div>
             <div class="col-md-4 right">
               <label class="col-md-4 control-label">N°PPR</label>
               <div>
-                <input name="ppr" id="ppr" placeholder="N°PPR" class="form-control" type="text" />
+                <input name="ppr" id="ppr" placeholder="N°PPR" class="form-control" type="text" required/>
               </div>
             </div>
           </div>
@@ -52,14 +53,14 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Prénom</label>
               <div>
-                <input name="prenom" id="prenom" placeholder="Prénom" class="form-control" type="text" />
+                <input name="prenom" id="prenom" placeholder="Prénom" class="form-control" type="text" required/>
               </div>
             </div>
 
             <div class="col-md-4 right">
               <label1 class="col-md-4 control-label">الاسم</label1>
               <div>
-                <input name="prenom_ar" id="prenom_ar" placeholder="الاسم" class="form-control right" type="text" />
+                <input name="prenom_ar" id="prenom_ar" placeholder="الاسم" class="form-control right" type="text" required/>
               </div>
             </div>
           </div>
@@ -72,13 +73,13 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Nom</label>
               <div>
-                <input name="nom" id="nom" placeholder="Nom" class="form-control" type="text" />
+                <input name="nom" id="nom" placeholder="Nom" class="form-control" type="text" required/>
               </div>
             </div>
             <div class="col-md-4 right">
               <label1 class="col-md-4 control-label">الاسم العائلي</label1>
               <div>
-                <input name="nom_ar" id="nom_ar" placeholder="الاسم العائلي" class="form-control right" type="text" />
+                <input name="nom_ar" id="nom_ar" placeholder="الاسم العائلي" class="form-control right" type="text" required/>
               </div>
             </div>
           </div>
@@ -123,7 +124,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Lieu de Naissance</label>
               <div>
-                <select name="lieu_Nai_fr" class="formc1 selectpicker">
+                <select name="lieu_Nai_fr" class="formc1 selectpicker" required>
                   <option value=" ">Lieu de Naisssance</option>
                   <option value="Afourar">Afourar</option>
                   <option value="Agadir">Agadir</option>
@@ -525,7 +526,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">مكان الإزدياد</label>
               <div>
-                <select name="Lieu_Nai_ar" class="formc1 right">
+                <select name="Lieu_Nai_ar" class="formc1 right"required>
                   <option value=" ">مكان الإزدياد</option>
                   <option value="Afourar">أفورار</option>
                   <option value="Agadir">أكادير</option>
@@ -997,7 +998,7 @@
           <label class="col-md-4 control-label">Date de Naissance</label>
           <div class="col-md-4">
             <div>
-              <input name="date_naissance" class="form-control" type="date" />
+              <input name="date_naissance" class="form-control" type="date" required/>
             </div>
           </div>
         </div>
@@ -1136,7 +1137,7 @@
             <div class="form-group">
               <div class="form1-group">
                 <div class="col-md-4">
-                  <label class="col-md-4 control-label">Sexe</label>
+                  <label class="col-md-4 control-label"  >Sexe</label>
                   <div class="radio">
                     <label>
                       <input type="radio" name="marie_enf_sex_fr" value="Male" />
@@ -1595,7 +1596,7 @@
                 <div class="col-md-4 right">
                   <label class="col-md-4 control-label right">مكان الإزدياد</label>
                   <div>
-                    <select name="marie_enf_lieu_Nai_ar" class="formc1 right">
+                    <select name="marie_enf_lieu_Nai_ar" class="formc1 right" >
                       <option value=" ">مكان الإزدياد</option>
                       <option value="Afourar">أفورار</option>
                       <option value="Agadir">أكادير</option>
@@ -2190,7 +2191,7 @@
                 <div class="col-md-4">
                   <label class="col-md-4 control-label">Lieu de Naissance</label>
                   <div>
-                    <select name="divorce_enf_lieu_Nai_fr" class="formc1 selectpicker">
+                    <select name="divorce_enf_lieu_Nai_fr" class="formc1 selectpicker" >
                       <option value=" ">Lieu de Naisssance</option>
                       <option value="Afourar">Afourar</option>
                       <option value="Agadir">Agadir</option>
@@ -2610,7 +2611,7 @@
                 <div class="col-md-4 right">
                   <label class="col-md-4 control-label right">مكان الإزدياد</label>
                   <div>
-                    <select name="divorce_enf_lieu_Nai_ar" id="divorce_enf_lieu_Nai_ar" class="formc1 right">
+                    <select name="divorce_enf_lieu_Nai_ar" id="divorce_enf_lieu_Nai_ar" class="formc1 right" >
                       <option value=" ">مكان الإزدياد</option>
                       <option value="Afourar">أفورار</option>
                       <option value="Agadir">أكادير</option>
@@ -3116,7 +3117,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Diplôme</label>
               <div>
-                <select name="diplome" class="formc1 selectpicker">
+                <select name="diplome" class="formc1 selectpicker" required>
                   <option value=" ">Diplôme</option>
                 </select>
               </div>
@@ -3124,7 +3125,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">Splécialité</label>
               <div>
-                <select name="specialite" class="formc1 right">
+                <select name="specialite" class="formc1 right" required>
                   <option value=" ">Splécialité</option>
                 </select>
               </div>
@@ -3141,7 +3142,7 @@
           <label class="col-md-4 control-label">Date de Recrutement</label>
           <div class="col-md-4">
             <div>
-              <input name="date_recrutement" class="form-control" type="date" />
+              <input name="date_recrutement" class="form-control" type="date" required/>
             </div>
           </div>
         </div>
@@ -3153,7 +3154,7 @@
               <label class="col-md-4 control-label">Grade</label>
               <div> 
                 <select name="grade_fr" id="grade_fr" class="formc1 selectpicker"
-                  onchange="indicegen();resetEchelonAndEchelle();updateEchelleOptions()">
+                  onchange="indicegen();resetEchelonAndEchelle();updateEchelleOptions()" required>
                   <option value=" ">Grade</option>
                   <option value="administrateur 1er grade">
                     Administrateur 1er Grade
@@ -3234,7 +3235,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">رتبة</label>
               <div>
-                <select name="grade_ar" id="grade_ar" class="formc1 right" disabled>
+                <select name="Grade_ar" id="grade_ar" class="formc1 right" disabled>
                   <option value=" ">رتبة</option>
                   <option value="متصرف من الدرجة الاولى">
                     متصرف من الدرجة الاولى
@@ -3307,6 +3308,7 @@
                   </option>
                 </select>
               </div>
+              <input type="hidden" id="hidden-ar" name="hidden_ar_select">
             </div>
           </div>
         </div>
@@ -3317,7 +3319,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Echelle</label>
               <div>
-                <select name="echelle" id="echelle" class="formc1 selectpicker">
+                <select name="echelle" id="echelle" class="formc1 selectpicker" required>
                   <option value=" ">Echelle</option>
                   <option value="6">6</option>
                   <option value="8">8</option>
@@ -3337,7 +3339,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label">Date d'échelle</label>
               <div>
-                <input name="date_echelle" class="form-control3" type="date" />
+                <input name="date_echelle" class="form-control3" type="date" required/>
               </div>
             </div>
           </div>
@@ -3349,7 +3351,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Echelon</label>
               <div>
-                <select name="echelon" id="echelon" class="formc1 selectpicker" onchange="indicegen()">
+                <select name="echelon" id="echelon" class="formc1 selectpicker" onchange="indicegen()" required>
                   <option value=" ">Echelon</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -3372,7 +3374,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label">Date d'échelon</label>
               <div>
-                <input name="date_echelon" class="form-control3" type="date" />
+                <input name="date_echelon" class="form-control3" type="date" required/>
               </div>
             </div>
           </div>
@@ -3384,14 +3386,14 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Indice</label>
               <div>
-                <input name="indice" id="indice" placeholder="Indice" class="form-control1" type="text" />
+                <input name="indice" id="indice" placeholder="Indice" class="form-control1" type="text" required/>
               </div>
             </div>
 
             <div class="col-md-4 right">
               <label class="col-md-4 control-label">Position</label>
               <div>
-                <select name="position" class="formc1 selectpicker">
+                <select name="position" class="formc1 selectpicker" required>
                   <option value=" ">Position</option>
                   <option value="officiel">Officiel</option>
                   <option value="activite">En activité</option>
@@ -3411,7 +3413,7 @@
               <div class="form1-group">
                 <div class="form1-group">
                   <input name="note[]" id="note1" placeholder="Note1" class="form-control" max="20" type="number"
-                    oninput="extractYear('note1');checkNumberValidity(this)" />
+                    oninput="extractYear('note1');checkNumberValidity(this)" required/>
                 </div>
                 <div class="form1-group">
                   <input name="note_ann[]" id="note1_ann" placeholder="Ann" class="form-control" type="text" readonly />
@@ -3424,7 +3426,7 @@
               <div class="form1-group">
                 <div class="form1-group">
                   <input name="note[]" id="note2" placeholder="Note2" class="form-control" max="20" type="number"
-                    oninput="extractYear('note2');checkNumberValidity(this)" />
+                    oninput="extractYear('note2');checkNumberValidity(this)" required/>
                 </div>
                 <div class="form1-group">
                   <input name="note_ann[]" id="note2_ann" placeholder="Ann" class="form-control" type="text" readonly />
@@ -3437,7 +3439,7 @@
               <div class="form1-group">
                 <div class="form1-group">
                   <input name="note[]" id="note3" placeholder="Note3" class="form-control" max="20" type="number"
-                    oninput="extractYear('note3');checkNumberValidity(this)" />
+                    oninput="extractYear('note3');checkNumberValidity(this)" required/>
                 </div>
                 <div class="form1-group">
                   <input name="note_ann[]" id="note3_ann" placeholder="Ann" class="form-control" type="text" readonly />
@@ -3450,7 +3452,7 @@
               <div class="form1-group">
                 <div class="form1-group">
                   <input name="note[]" id="note4" placeholder="Note4" class="form-control" type="text"
-                    oninput="extractYear('note4');checkNumberValidity(this)" />
+                    oninput="extractYear('note4');checkNumberValidity(this)" required/>
                 </div>
                 <div class="form1-group">
                   <input name="note_ann[]" id="note4_ann" placeholder="Ann" class="form-control" type="text" readonly />
@@ -3470,7 +3472,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Division</label>
               <div>
-                <select name="division_fr" id="division_fr" class="formc1 selectpicker" onchange="updateservice()">
+                <select name="division_fr" id="division_fr" class="formc1 selectpicker" onchange="updateservice()" required>
                   <option value="">Division</option>
                   <option value="Direction des services communaux">
                     Direction des services communaux
@@ -3516,7 +3518,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Service</label>
               <div>
-                <select name="service_fr" id="service_fr" class="formc1 selectpicker">
+                <select name="service_fr" id="service_fr" class="formc1 selectpicker" required>
                   <option value=" ">Service</option>
                   <option value="Service des travaux et de la protection de l'environement">
                     Service des travaux et de la protection de l'environement
@@ -3594,7 +3596,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Bureau</label>
               <div>
-                <select name="bureau_fr" id="bureau_fr" class="formc1 selectpicker">
+                <select name="bureau_fr" id="bureau_fr" class="formc1 selectpicker" required>
                   <option value=" ">Bureau</option>
                   <option value="Bureau des traveaux">
                     Bureau des traveaux
@@ -3709,7 +3711,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Date d'affectation</label>
               <div>
-                <input name="date_affectation" class="form-control1" type="date" />
+                <input name="date_affectation" class="form-control1" type="date" required/>
               </div>
             </div>
           </div>
