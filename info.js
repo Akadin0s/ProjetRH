@@ -600,12 +600,12 @@ function checkNumberValidity(input) {
   
           // Disable the Echelle select and Indice input if Grade is not empty
            if (grade.trim() !== "") {               
-               indiceInput.disabled = true;
+               indiceInput.readOnly = true;
                
            } else {
             // Enable the Echelle select and Indice input if Grade is empty
-            indiceInput.disabled = false;   
-            echelleSelect.disabled = false;     
+            indiceInput.readOnly = false;   
+            echelleSelect.readOnly = false;     
         }
         // Update the result element with the generated HTML
         document.getElementById('indice').value = rsindice;
@@ -636,7 +636,7 @@ function updateEchelleOptions() {
     var allOptionsechelon = echelonSelect.options;
 
     if (grade === "ingenieur etat" || grade === "architecte") {
-      echelleSelect.disabled = false;
+      echelleSelect.readOnly = false;
       for (var i = 0; i < allOptionsechelle.length; i++) {
           var optionechelle = allOptionsechelle[i];
           if (optionechelle.value === "1er grade" || optionechelle.value === "grade principal") {
@@ -665,7 +665,7 @@ function updateEchelleOptions() {
           }
       }
   } else if (grade === "administrateur 1er grade"||grade === "administrateur principal mi"||grade === "infirmier grade exceptionnel" ) {
-      echelleSelect.disabled = true;
+      echelleSelect.readOnly = true;
       for (var j = 0; j < allOptionsechelon.length; j++) {
           var optionechelon = allOptionsechelon[j];
           if (optionechelon.value === "1" || optionechelon.value === "2"|| optionechelon.value === "3"|| optionechelon.value === "4"|| optionechelon.value === "5"|| optionechelon.value === "6") {
@@ -675,7 +675,7 @@ function updateEchelleOptions() {
           }
       }
   } else if (grade === "ingenieur en chef" || grade === "architecte chef") {
-      echelleSelect.disabled = false;
+      echelleSelect.readOnly = false;
       for (var i = 0; i < allOptionsechelle.length; i++) {
           var optionechelle = allOptionsechelle[i];
           if (optionechelle.value === "1er grade" || optionechelle.value === "grade principal") {
@@ -704,7 +704,7 @@ function updateEchelleOptions() {
           }
       }
   } else if (grade === "adjoint technique 1er grade" || grade === "adjoint technique 2eme grade"|| grade === "adjoint technique grade principal" || grade === "adjoint administratif grade principal" || grade === "adjoint administratif 1er grade" || grade === "adjoint administratif 2eme grade"|| grade === "redacteur 4eme grade"|| grade === "redacteur 3eme grade"|| grade === "technicien 4eme grade"|| grade === "technicien 3eme grade") {
-      echelleSelect.disabled = true;
+      echelleSelect.readOnly = true;
       for (var j = 0; j < allOptionsechelon.length; j++) {
           var optionechelon = allOptionsechelon[j];
           if (optionechelon.value === "1" || optionechelon.value === "2"|| optionechelon.value === "3"|| optionechelon.value === "4"|| optionechelon.value === "5"|| optionechelon.value === "6"|| optionechelon.value === "7"|| optionechelon.value === "8"|| optionechelon.value === "9"|| optionechelon.value === "10") {
@@ -716,7 +716,7 @@ function updateEchelleOptions() {
   
   } 
   else if (grade === "administrateur 2eme grade"||grade === "administrateur 3eme grade"||grade === "redacteur 2eme grade"||grade === "technicien 2eme grade"||grade ==="administrateur mi"||grade ==="administrateur adjoint mi" || grade === "infirmier 1er grade" ) {
-      echelleSelect.disabled = true;
+      echelleSelect.readOnly = true;
       for (var j = 0; j < allOptionsechelon.length; j++) {
           var optionechelon = allOptionsechelon[j];
           if (optionechelon.value === "1" || optionechelon.value === "2"|| optionechelon.value === "3"|| optionechelon.value === "4"|| optionechelon.value === "5"|| optionechelon.value === "6"|| optionechelon.value === "7"|| optionechelon.value === "8"|| optionechelon.value === "9"|| optionechelon.value === "10"|| optionechelon.value === "exceptionnel") {
@@ -729,7 +729,7 @@ function updateEchelleOptions() {
   }
 }
 else if (grade === "redacteur 1er grade_fr"||grade === "technicien 1er grade"|| grade === "infirmier grade principal") {
-  echelleSelect.disabled = true;
+  echelleSelect.readOnly = true;
     for (var j = 0; j < allOptionsechelon.length; j++) {
       var optionechelon = allOptionsechelon[j];
       if (optionechelon.value === "exceptionnel") {
@@ -742,7 +742,7 @@ else if (grade === "redacteur 1er grade_fr"||grade === "technicien 1er grade"|| 
   }
 }
 else if (grade === "veterinaire"|| grade === "medecin" ) {
-  echelleSelect.disabled = false;
+  echelleSelect.readOnly = false;
   for (var i = 0; i < allOptionsechelle.length; i++) {
       var optionechelle = allOptionsechelle[i];
       if (optionechelle.value === "1er grade" || optionechelle.value === "grade principal"|| optionechelle.value === "grade exceptionnel"|| optionechelle.value === "hors echelle") {
@@ -766,7 +766,7 @@ else if (grade === "veterinaire"|| grade === "medecin" ) {
   
 }
    else {
-        echelleSelect.disabled = true;
+        echelleSelect.readOnly = true;
         indicegen();
          document.getElementById('echelon').selectedIndex = 0;
          document.getElementById('indice').value = '';
@@ -796,8 +796,8 @@ function updateservice(){
   var bureauselectar = document.getElementById('bureau_ar');
   var alloptionsservice = serviceselect;
   var alloptionsbureau = bureauselect;
-  serviceselect.disabled = false;
-  bureauselect.disabled = false;
+  serviceselect.readOnly = false;
+  bureauselect.readOnly = false;
   if(division === "Division des affaires techniques et d'urbanisme"){
     for (var i = 0; i < alloptionsservice.length; i++) {
       var optionservice = alloptionsservice[i];
@@ -827,10 +827,10 @@ function updateservice(){
               var optionbureau = alloptionsbureau[i];
                 optionbureau.hidden = true;          
           }
-          bureauselect.disabled = true;
-                document.getElementById('bureau_ar').value = '';
-                bureauselectar.disabled = true;
-                document.getElementById('bureau_fr').value = '';  
+          bureauselect.readOnly = true;
+                document.getElementById('bureau_ar').value = ' ';
+                bureauselectar.readOnly = true;
+                document.getElementById('bureau_fr').value = ' ';  
           }
       } else {
         optionservice.hidden = true;
@@ -855,10 +855,10 @@ function updateservice(){
               var optionbureau = alloptionsbureau[i];
                 optionbureau.hidden = true;          
           }
-          bureauselect.disabled = true;
-                document.getElementById('bureau_ar').value = '';
-                bureauselectar.disabled = true;
-                document.getElementById('bureau_fr').value = '';  
+          bureauselect.readOnly = true;
+                document.getElementById('bureau_ar').value = ' ';
+                bureauselectar.readOnly = true;
+                document.getElementById('bureau_fr').value = ' ';  
           }
       } else {
         optionservice.hidden = true;
@@ -892,10 +892,10 @@ function updateservice(){
               var optionbureau = alloptionsbureau[i];
                 optionbureau.hidden = true;          
           }
-          bureauselect.disabled = true;
-                document.getElementById('bureau_ar').value = '';
-                bureauselectar.disabled = true;
-                document.getElementById('bureau_fr').value = '';  
+          bureauselect.readOnly = true;
+                document.getElementById('bureau_ar').value = ' ';
+                bureauselectar.readOnly = true;
+                document.getElementById('bureau_fr').value = ' ';  
           }
       } else {
         optionservice.hidden = true;
@@ -906,10 +906,10 @@ function updateservice(){
       var optionservice = alloptionsservice[i];      
         optionservice.hidden = true;
   }
-        serviceselect.disabled = true;
-        document.getElementById('service_fr').value = '';
-        serviceselectar.disabled = true;
-        document.getElementById('service_ar').value = '';
+        serviceselect.readOnly = true;
+        document.getElementById('service_fr').value = ' ';
+        serviceselectar.readOnly = true;
+        document.getElementById('service_ar').value = ' ';
     for (var i = 0; i < alloptionsbureau.length; i++) {
           var optionbureau = alloptionsbureau[i];
           if (optionbureau.value === "Cellule d'audit" || optionbureau.value === "Secrétariat du président"|| optionbureau.value === "Bureau des réclamations"|| optionbureau.value === "Bureau d'ordre") {
@@ -925,10 +925,10 @@ function updateservice(){
       var optionbureau = alloptionsbureau[i];
         optionbureau.hidden = true;          
   }
-  bureauselect.disabled = true;
-        document.getElementById('bureau_ar').value = '';
-        bureauselectar.disabled = true;
-        document.getElementById('bureau_fr').value = '';  
+  bureauselect.readOnly = true;
+        document.getElementById('bureau_ar').value = ' ';
+        bureauselectar.readOnly = true;
+        document.getElementById('bureau_fr').value = ' ';  
   }
 }
 function resetserv() {
@@ -1038,11 +1038,10 @@ const optionMapping = {
 gradefr.addEventListener('change', function() {
   const selectedFrenchOption = this.value;
   const correspondingArabicOption = optionMapping[selectedFrenchOption];
-  var hiddenAr = document.getElementById('hidden-ar');
   if (correspondingArabicOption) {
       gradear.value = correspondingArabicOption;
-      gradear.disabled= true;
-      hiddenAr.value = gradear.value ;
+      gradear.readOnly= true;
+
   } else {
       gradear.value = '';
       
@@ -1054,7 +1053,7 @@ divisionfr.addEventListener('change', function() {
 
   if (correspondingArabicOption) {
     divisionar.value = correspondingArabicOption;
-      divisionar.disabled= true;
+      divisionar.readOnly= true;
   } else {
     divisionar.value = '';
   }
@@ -1065,7 +1064,7 @@ servicefr.addEventListener('change', function() {
 
   if (correspondingArabicOption) {
     servicear.value = correspondingArabicOption;
-      servicear.disabled= true;
+      servicear.readOnly= true;
   } else {
     servicear.value = '';
   }
@@ -1076,7 +1075,7 @@ bureaufr.addEventListener('change', function() {
 
   if (correspondingArabicOption) {
       bureauar.value = correspondingArabicOption;
-      bureauar.disabled= true;
+      bureauar.readOnly= true;
   } else {
       bureauar.value = '';
   }

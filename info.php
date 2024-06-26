@@ -3235,7 +3235,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">رتبة</label>
               <div>
-                <select name="Grade_ar" id="grade_ar" class="formc1 right" disabled>
+                <select name="Grade_ar" id="grade_ar" class="formc1 right" readonly>
                   <option value=" ">رتبة</option>
                   <option value="متصرف من الدرجة الاولى">
                     متصرف من الدرجة الاولى
@@ -3308,7 +3308,8 @@
                   </option>
                 </select>
               </div>
-              <input type="hidden" id="hidden-ar" name="hidden_ar_select">
+              
+              
             </div>
           </div>
         </div>
@@ -3492,7 +3493,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">القسم</label>
               <div>
-                <select name="division_ar" id="division_ar" class="formc1 right" disabled>
+                <select name="division_ar" id="division_ar" class="formc1 right" readonly>
                   <option value=" ">القسم</option>
                   <option value="قسم الشؤون التقنية والتعمير">
                     قسم الشؤون التقنية والتعمير
@@ -3555,7 +3556,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">المصلحة</label>
               <div>
-                <select name="service_ar" id="service_ar" class="formc1 right" disabled>
+                <select name="service_ar" id="service_ar" class="formc1 right" readonly>
                   <option value=" ">المصلحة</option>
                   <option value="مصلحة الأشغال والمحافظة على البيئة">
                     مصلحة الأشغال والمحافظة على البيئة
@@ -3658,7 +3659,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">المكتب</label>
               <div>
-                <select name="bureau_ar" id="bureau_ar" class="formc1 right" disabled>
+                <select name="bureau_ar" id="bureau_ar" class="formc1 right" readonly>
                   <option value=" ">المكتب</option>
                   <option value="مكتب الأشغال">مكتب الأشغال</option>
                   <option value="مكتب الإنارة العمومية">

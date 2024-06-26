@@ -60,8 +60,8 @@ if(isset($_POST["subm"])){
     $date_echelon = $_POST["date_echelon"];
     $indice = $_POST["indice"];
     $position = $_POST["position"];
-    $notes = $_POST["note"];
-    $note_anns = $_POST["note_ann"];
+    $note = $_POST["note"];
+    $note_ann = $_POST["note_ann"];
     //fonction
     $division_fr = $_POST["division_fr"];
     $division_ar = $_POST["division_ar"];
@@ -83,24 +83,34 @@ if(isset($_POST["subm"])){
     !empty($bureau_fr) ||!empty($bureau_ar) ||!empty($date_affectation) ) {
         $sql = "INSERT INTO `etat_civil`(`CNIE`,`PPR`,`Prenom`,`Prenom_Ar`,`Nom`,`Nom_Ar`,`Sex`,`Sexe_Ar`,`Lieu_Nai`,`Lieu_Nai_Ar`,`Date_Nai`,`Situation_Fam`,`Diplome`,`Specialite`) VALUES ('$cnie','$ppr','$prenom','$prenom_ar','$nom','$nom_ar','$sexe','$sexe_ar','$lieu_Nai_fr','$lieu_Nai_ar','$date_naissance','$situation_familiale','$diplome','$specialite');";
         $sth = $cnx->query($sql);
-        $sql1 = "INSERT INTO `etat_admin`(`Date_Recrut`,`Grade`,`Grade_Ar`,`Echelle`,`Date_Echelle`,`Echelon`,`Date_Echelon`,`Indice`,`Position`,`Note`,`Date_Note`,`PPR`) VALUES ('$date_recrutement','$grade_fr','$grade_ar','$echelle','$date_echelle','$echelon','$date_echelon','$indice','$position','$note','$Date_Note','$PPR');";
-        $sth = $pdo->prepare($sql1);
-        for ($i = 0; $i < count($note); $i++) {
-            $sth->execute([
-                'Date_Recrut' => $date_recrutement,
-                'Grade' => $grade_fr,
-                'Grade_Ar' => $grade_ar,
-                'Echelle' => $echelle,
-                'Date_Echelle' => $date_echelle,
-                'Echelon' => $echelon,
-                'Date_Echelon' => $date_echelon,
-                'Indice' => $indice,
-                'Position' => $position,
-                'Note' => $note[$i],
-                'Date_Note' => $note_ann[$i],
-                'PPR' => $ppr
-            ]);
-        }
+        // Assuming $note and $note_ann are arrays and have the same length
+if (is_array($note) && is_array($note_ann) && count($note) == count($note_ann)) {
+    $sql1 = "INSERT INTO `etat_admin` (`Date_Recrut`, `Grade`, `Grade_Ar`, `Echelle`, `Date_Echelle`, `Echelon`, `Date_Echelon`, `Indice`, `Position`, `Note`, `Date_Note`, `PPR`)
+             VALUES (:Date_Recrut, :Grade, :Grade_Ar, :Echelle, :Date_Echelle, :Echelon, :Date_Echelon, :Indice, :Position, :Note, :Date_Note, :PPR)";
+
+    $sth = $cnx->prepare($sql1);
+
+    for ($i = 0; $i < count($note); $i++) {
+        $sth->execute([
+            ':Date_Recrut' => $date_recrutement,
+            ':Grade' => $grade_fr,
+            ':Grade_Ar' => $grade_ar,
+            ':Echelle' => $echelle,
+            ':Date_Echelle' => $date_echelle,
+            ':Echelon' => $echelon,
+            ':Date_Echelon' => $date_echelon,
+            ':Indice' => $indice,
+            ':Position' => $position,
+            ':Note' => $note[$i],
+            ':Date_Note' => $note_ann[$i],
+            ':PPR' => $ppr
+        ]);
+    }
+} else {
+    // Handle the error where $note and $note_ann are not valid arrays or their lengths do not match
+    echo "Error: 'note' and 'note_ann' arrays are either not valid or do not have the same length.";
+}
+
         $sql3 = "INSERT INTO `fonction`(`Division`,`Division_Ar`,`Service`,`Service_Ar`,`Bureau`,`Bureau_Ar`,`Date_affect`,`PPR`) VALUES ('$division_fr','$division_ar','$service_fr','$service_ar','$bureau_fr','$bureau_ar','$date_affectation');";
         $sth = $cnx ->query($sql3);
         if ($situation_familiale === 'marie') {
