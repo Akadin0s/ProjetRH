@@ -14,7 +14,7 @@ if(isset($_POST["subm"])){
     $lieu_Nai_ar = $_POST["Lieu_Nai_ar"];
     $date_naissance = $_POST["date_naissance"];
     $situation_familiale = $_POST["situation_familiale"];
-    if($situation_familiale === 'Marie') {
+    if($situation_familiale === 'marie') {
         $marie_prenom_fr = $_POST["marie_prenom_fr"];
         $marie_prenom_ar = $_POST["marie_prenom_ar"];
         $marie_nom_fr = $_POST["marie_nom_fr"];
@@ -111,10 +111,10 @@ if (is_array($note) && is_array($note_ann) && count($note) == count($note_ann)) 
     echo "Error: 'note' and 'note_ann' arrays are either not valid or do not have the same length.";
 }
 
-        $sql3 = "INSERT INTO `fonction`(`Division`,`Division_Ar`,`Service`,`Service_Ar`,`Bureau`,`Bureau_Ar`,`Date_affect`,`PPR`) VALUES ('$division_fr','$division_ar','$service_fr','$service_ar','$bureau_fr','$bureau_ar','$date_affectation');";
+        $sql3 = "INSERT INTO `fonction`(`Division`,`Division_Ar`,`Service`,`Service_Ar`,`Bureau`,`Bureau_Ar`,`Date_affect`,`PPR`) VALUES ('$division_fr','$division_ar','$service_fr','$service_ar','$bureau_fr','$bureau_ar','$date_affectation','$ppr');";
         $sth = $cnx ->query($sql3);
         if ($situation_familiale === 'marie') {
-            $sql4 = "INSERT INTO `info_marie`(`CNIE`,`Prenom`,`Prenom_Ar`,`Nom`,`Nom_Ar`,`N_enfant`,`PPR_marie`) VALUES ('$marie_cnie','$marie_prenom_fr','$marie_prenom_ar','$marie_nom_fr','$marie_nom_ar','$marie_nbrenf');";
+            $sql4 = "INSERT INTO `info_marie`(`CNIE`,`Prenom`,`Prenom_Ar`,`Nom`,`Nom_Ar`,`N_enfant`,`PPR_marie`) VALUES ('$marie_cnie','$marie_prenom_fr','$marie_prenom_ar','$marie_nom_fr','$marie_nom_ar','$marie_nbrenf','$ppr');";
             $sth = $cnx->query($sql4);
         }
         if($situation_familiale ==='marie' && $marie_nbrenf >0){

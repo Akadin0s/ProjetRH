@@ -798,22 +798,22 @@ function updateservice(){
   var alloptionsbureau = bureauselect;
   serviceselect.readOnly = false;
   bureauselect.readOnly = false;
-  if(division === "Division des affaires techniques et d'urbanisme"){
+  if(division === "Division des affaires techniques et d`urbanisme"){
     for (var i = 0; i < alloptionsservice.length; i++) {
       var optionservice = alloptionsservice[i];
-      if (optionservice.value === "Service des travaux et de la protection de l'environement" || optionservice.value === "Service d'urbanisme et du patrimoine"|| optionservice.value === "Service de la gestion déléguée des engins du materiel") {
+      if (optionservice.value === "Service des travaux et de la protection de l`environement" || optionservice.value === "Service d`urbanisme et du patrimoine"|| optionservice.value === "Service de la gestion déléguée des engins du materiel") {
         optionservice.hidden = false;
-        if(service === "Service des travaux et de la protection de l'environement"){
+        if(service === "Service des travaux et de la protection de l`environement"){
             
             for (var i = 0; i < alloptionsbureau.length; i++) {
               var optionbureau = alloptionsbureau[i];
-              if (optionbureau.value === "Bureau des traveaux" || optionbureau.value === "Bureau de l'éclarage public"|| optionbureau.value === "Bureau des éspace verts et de la protection de l'environement") {
+              if (optionbureau.value === "Bureau des traveaux" || optionbureau.value === "Bureau de l`éclarage public"|| optionbureau.value === "Bureau des éspace verts et de la protection de l`environement") {
                 optionbureau.hidden = false;
               } else {
                 optionbureau.hidden = true;
               }
           }
-          }else if(service === "Service d'urbanisme et du patrimoine"){
+          }else if(service === "Service d`urbanisme et du patrimoine"){
             for (var i = 0; i < alloptionsbureau.length; i++) {
               var optionbureau = alloptionsbureau[i];
               if (optionbureau.value === "Bureau du gichet unique des autorisations et du control du batiment"|| optionbureau.value === "Bureau du patrimoine") {
@@ -839,12 +839,12 @@ function updateservice(){
   }else  if(division === "Division des affaires administratives"){
     for (var i = 0; i < alloptionsservice.length; i++) {
       var optionservice = alloptionsservice[i];
-      if (optionservice.value === "Service des ressources humaines et de le formation" || optionservice.value === "Service des affaires juridiques de l'informatique et des affaires du conseil"|| optionservice.value === "Service des affaires sociales culturelles et sportives") {
+      if (optionservice.value === "Service des ressources humaines et de le formation" || optionservice.value === "Service des affaires juridiques de l`informatique et des affaires du conseil"|| optionservice.value === "Service des affaires sociales culturelles et sportives") {
         optionservice.hidden = false;
-        if(service === "Service des affaires juridiques de l'informatique et des affaires du conseil"){
+        if(service === "Service des affaires juridiques de l`informatique et des affaires du conseil"){
             for (var i = 0; i < alloptionsbureau.length; i++) {
               var optionbureau = alloptionsbureau[i];
-              if (optionbureau.value === "Bureau des affaires juridiques"|| optionbureau.value === "Bureau de l'informatique"|| optionbureau.value === "Bureau des affaires du conseil"|| optionbureau.value === "Bureau d'état civil de la legalisation de signature et ses annexes") {
+              if (optionbureau.value === "Bureau des affaires juridiques"|| optionbureau.value === "Bureau de l`informatique"|| optionbureau.value === "Bureau des affaires du conseil"|| optionbureau.value === "Bureau d`état civil de la legalisation de signature et ses annexes") {
                 optionbureau.hidden = false;
               } else {
                 optionbureau.hidden = true;
@@ -867,7 +867,7 @@ function updateservice(){
   }else  if(division === "Division des affaires financière et économiques"){
     for (var i = 0; i < alloptionsservice.length; i++) {
       var optionservice = alloptionsservice[i];
-      if (optionservice.value === "Service des ressources financières" || optionservice.value === "Service des marchés et du budget"|| optionservice.value === "Service economique de la police administrative et d'hygiene") {
+      if (optionservice.value === "Service des ressources financières" || optionservice.value === "Service des marchés et du budget"|| optionservice.value === "Service economique de la police administrative et d`hygiene") {
         optionservice.hidden = false;
         if(service === "Service des marchés et du budget"){
             for (var i = 0; i < alloptionsbureau.length; i++) {
@@ -878,10 +878,10 @@ function updateservice(){
                 optionbureau.hidden = true;
               }
           }
-          }else if(service === "Service economique de la police administrative et d'hygiene"){
+          }else if(service === "Service economique de la police administrative et d`hygiene"){
             for (var i = 0; i < alloptionsbureau.length; i++) {
               var optionbureau = alloptionsbureau[i];
-              if (optionbureau.value === "Bureau economique et sociale"|| optionbureau.value === "Bureau de la police administrative"|| optionbureau.value === "Bureau d'hygiène et de la prévention"|| optionbureau.value === "Burau de la santé vétérinaire") {
+              if (optionbureau.value === "Bureau economique et sociale"|| optionbureau.value === "Bureau de la police administrative"|| optionbureau.value === "Bureau d`hygiène et de la prévention"|| optionbureau.value === "Burau de la santé vétérinaire") {
                 optionbureau.hidden = false;
               } else {
                 optionbureau.hidden = true;
@@ -912,7 +912,7 @@ function updateservice(){
         document.getElementById('service_ar').value = ' ';
     for (var i = 0; i < alloptionsbureau.length; i++) {
           var optionbureau = alloptionsbureau[i];
-          if (optionbureau.value === "Cellule d'audit" || optionbureau.value === "Secrétariat du président"|| optionbureau.value === "Bureau des réclamations"|| optionbureau.value === "Bureau d'ordre") {
+          if (optionbureau.value === "Cellule d`audit" || optionbureau.value === "Secrétariat du président"|| optionbureau.value === "Bureau des réclamations"|| optionbureau.value === "Bureau d`ordre") {
             optionbureau.hidden = false;
           } else {
             optionbureau.hidden = true;
@@ -1000,36 +1000,36 @@ const optionMapping = {
     "technicien 4eme grade": "تقني من الدرجة الرابعة",
   //Bureau
   "Bureau des traveaux": "مكتب الأشغال",
-  "Bureau de l'éclarage public": "مكتب الإنارة العمومية",
-  "Bureau des éspace verts et de la protection de l'environement": "مكتب المناطق الخضراء والمحافظة على البيئة",
+  "Bureau de l`éclarage public": "مكتب الإنارة العمومية",
+  "Bureau des éspace verts et de la protection de l`environement": "مكتب المناطق الخضراء والمحافظة على البيئة",
   "Bureau du gichet unique des autorisations et du control du batiment": "مكتب الشباك الوحيد والرخص ومراقبة البناء",
   "Bureau du patrimoine": "مكتب الممتلكات",
   "Bureau des affaires juridiques": "مكتب الشؤون القانونية",
-  "Bureau de l'informatique": "مكتب المعلوميات",
+  "Bureau de l`informatique": "مكتب المعلوميات",
   "Bureau des affaires du conseil": "مكتب شؤون المجلس",
-  "Bureau d'état civil de la legalisation de signature et ses annexes": "مكتب الحالة المدنية وتصحيح و الإمضاء وملحقاته",
+  "Bureau d`état civil de la legalisation de signature et ses annexes": "مكتب الحالة المدنية وتصحيح و الإمضاء وملحقاته",
   "Bureau des marchés": "مكتب الصفقات",
   "Bureau des budget": "مكتب الميزانية",
   "Bureau economique et sociale": "المكتب الإقتصادي والإجتماعي",
   "Bureau de la police administrative": "مكتب الشرطة الإدارية",
-  "Bureau d'hygiène et de la prévention": "مكتب حفظ الصحة والوقاية",
+  "Bureau d`hygiène et de la prévention": "مكتب حفظ الصحة والوقاية",
   "Burau de la santé vétérinaire": "مكتب الصحة البيطرية",
-  "Cellule d'audit": "خلية الإفتحاص",
+  "Cellule d`audit": "خلية الإفتحاص",
   "Secrétariat du président": "الكتابة الخاصة للرئيس",
   "Bureau des réclamations":"مكتب الشكايات",
-  "Bureau d'ordre":"مكتب الضبط",
+  "Bureau d`ordre":"مكتب الضبط",
   //service
-  "Service des travaux et de la protection de l'environement": "مصلحة الأشغال والمحافظة على البيئة",
-  "Service d'urbanisme et du patrimoine": "مصلحة التعمير والممتلكات",
+  "Service des travaux et de la protection de l`environement": "مصلحة الأشغال والمحافظة على البيئة",
+  "Service d`urbanisme et du patrimoine": "مصلحة التعمير والممتلكات",
   "Service de la gestion déléguée des engins du materiel": "مصلحة التدبير المفوض والأليات المعتاد",
   "Service des ressources humaines et de le formation": "مصلحة الموارد البشرية والتكوين",
-  "Service des affaires juridiques de l'informatique et des affaires du conseil": "مصلحة الشؤون القانونية والمعلوميات وشؤون المجلس",
+  "Service des affaires juridiques de l`informatique et des affaires du conseil": "مصلحة الشؤون القانونية والمعلوميات وشؤون المجلس",
   "Service des affaires sociales culturelles et sportives": "مصلحة الشؤون الاجتماعية والثقافية والرياضية",
   "Service des ressources financières": "مصلحة الموارد المالية",
   "Service des marchés et du budget": "مصلحة الصفقات والميزانية",
-  "Service economique de la police administrative et d'hygiene": "المصلحة الاقتصادية والشرطة الادارية و حفظ الصحة",
+  "Service economique de la police administrative et d`hygiene": "المصلحة الاقتصادية والشرطة الادارية و حفظ الصحة",
   //Division
-  "Division des affaires techniques et d'urbanisme": "قسم الشؤون التقنية والتعمير",
+  "Division des affaires techniques et d`urbanisme": "قسم الشؤون التقنية والتعمير",
   "Division des affaires administratives": "قسم الشؤون الادارية",
   "Division des affaires financière et économiques": "قسم الشؤون المالية والاقتصادية",
   "Direction des services communaux":"مديرية المصالح الجماعية"
