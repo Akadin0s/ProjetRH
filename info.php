@@ -89,14 +89,16 @@
           <div class="form1-group">           
             <div class="col-md-4">
                   <label class="col-md-4 control-label">Sexe</label>
-                  <select name="sexe" id="sexe">
+                  <select name="sexe" class="formc1 selectpicker" id="sexe">
+                    <option value="">Sexe</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                   </select>
                 </div>
                 <div class="col-md-4 right">
                   <label class="col-md-4 control-label">الجنس</label>
-                  <select name="sexe_ar" id="sexe_ar">
+                  <select name="sexe_ar" class="formc1 selectpicker" id="sexe_ar">
+                    <option value="">الجنس</option>
                     <option value="ذكر">ذكر</option>
                     <option value="أنثى">أنثى</option>
                   </select>
@@ -273,6 +275,14 @@
                   <option value="Imouzzer Marmoucha">
                     Imouzzer Marmoucha
                   </option>
+
+
+
+
+
+
+
+
                   <option value="Imzouren">Imzouren</option>
                   <option value="Inezgane">Inezgane</option>
                   <option value="Irherm">Irherm</option>
@@ -511,424 +521,14 @@
               </div>
             </div>
             <div class="col-md-4 right">
-              <label class="col-md-4 control-label right">مكان الإزدياد</label>
+              <label class="col-md-4 control-label right">Date de Naissance</label>
               <div>
-                <select name="Lieu_Nai_ar" class="formc1 right" required>                   
-                      <option value=" ">مكان الإزدياد</option>
-                      <option value="أفورار">أفورار</option>
-                      <option value="أكادير">أكادير</option>
-                      <option value="أغبالا">أغبالا</option>
-                      <option value="أغبالو">أغبالو</option>
-                      <option value="أكدز">أكدز</option>
-                      <option value="أغوراي">أغوراي</option>
-                      <option value="أگلموس">أگلموس</option>
-                      <option value="أحفير">أحفير</option>
-                      <option value="عين لهوا">عين لهوا</option>
-                      <option value="عين بني مطهر">عين بني مطهر</option>
-                      <option value="عين شقاق">عين شقاق</option>
-                      <option value="عين الدريج">عين الدريج</option>
-                      <option value="عين العودة">عين العودة</option>
-                      <option value="عين الركادة">عين الركادة</option>
-                      <option value="عين حرودة">عين حرودة</option>
-                      <option value="عين جمعة">عين جمعة</option>
-                      <option value="عين كرمة">عين كرمة</option>
-                      <option value="عين تاوجدات">عين تاوجدات</option>
-                      <option value="آيت يعزة">آيت يعزة</option>
-                      <option value="آيت باها">آيت باها</option>
-                      <option value="آيت بوبيدم">آيت بوبيدم</option>
-                      <option value="آيت داود">آيت داود</option>
-                      <option value="آيت إسحاق">آيت إسحاق</option>
-                      <option value="آيت ملول">آيت ملول</option>
-                      <option value="آيت أورير">آيت أورير</option>
-                      <option value="أكا">أكا</option>
-                      <option value="أكليم">أكليم</option>
-                      <option value="أكنول">أكنول</option>
-                      <option value="عجدير">عجدير</option>
-                      <option value="العروي">العروي</option>
-                      <option value="الحسيمة">الحسيمة</option>
-                      <option value="النيف">النيف</option>
-                      <option value="أمالو إغريبن">أمالو إغريبن</option>
-                      <option value="أمزميز">أمزميز</option>
-                      <option value="أوفوس">أوفوس</option>
-                      <option value="أولوز">أولوز</option>
-                      <option value="أورير">أورير</option>
-                      <option value="الرباوة">الرباوة</option>
-                      <option value="أرفود">أرفود</option>
-                      <option value="أسا">أسا</option>
-                      <option value="الساحريج">الساحريج</option>
-                      <option value="أصيلة">أصيلة</option>
-                      <option value="أزمور">أزمور</option>
-                      <option value="أزيلال">أزيلال</option>
-                      <option value="أزرو">أزرو</option>
-                      <option value="باب برد">باب برد</option>
-                      <option value="باب تازة">باب تازة</option>
-                      <option value="بجاض">بجاض</option>
-                      <option value="بن أحمد">بن أحمد</option>
-                      <option value="بن جرير">بن جرير</option>
-                      <option value="بن الطاهر">بن الطاهر</option>
-                      <option value="بن يخلف">بن يخلف</option>
-                      <option value="بني ملال">بني ملال</option>
-                      <option value="بن سليمان">بن سليمان</option>
-                      <option value="بركان">بركان</option>
-                      <option value="برشيد">برشيد</option>
-                      <option value="بحاليل">بحاليل</option>
-                      <option value="بيوگرا">بيوگرا</option>
-                      <option value="بني أنصار">بني أنصار</option>
-                      <option value="بني بوعياش">بني بوعياش</option>
-                      <option value="بني شيكر">بني شيكر</option>
-                      <option value="بني درار">بني درار</option>
-                      <option value="بني حديفة">بني حديفة</option>
-                      <option value="بني تجيت">بني تجيت</option>
-                      <option value="بوعنان">بوعنان</option>
-                      <option value="بوعرفة">بوعرفة</option>
-                      <option value="بودنيب">بودنيب</option>
-                      <option value="بوگدرة">بوگدرة</option>
-                      <option value="بوهديلة">بوهديلة</option>
-                      <option value="بويزكارن">بويزكارن</option>
-                      <option value="بوجدور">بوجدور</option>
-                      <option value="بوجنيبة">بوجنيبة</option>
-                      <option value="بولانوار">بولانوار</option>
-                      <option value="بولمان">بولمان</option>
-                      <option value="بولمان الدادس">بولمان الدادس</option>
-                      <option value="بومية">بومية</option>
-                      <option value="بوسكورة">بوسكورة</option>
-                      <option value="بوزنيقة">بوزنيقة</option>
-                      <option value="بوزتات">بوزتات</option>
-                      <option value="برادية">برادية</option>
-                      <option value="بريكشة">بريكشة</option>
-                      <option value="بزو">بزو</option>
-                      <option value="الدار البيضاء">الدار البيضاء</option>
-                      <option value="شفشاون">شفشاون</option>
-                      <option value="شيشاوة">شيشاوة</option>
-                      <option value="الداخلة">الداخلة</option>
-                      <option value="دار بني كريش">دار بني كريش</option>
-                      <option value="دار الشاوي">دار الشاوي</option>
-                      <option value="دار الكبداني">دار الكبداني</option>
-                      <option value="دار الواعري">دار الواعري</option>
-                      <option value="دار ولد زيدوه">دار ولد زيدوه</option>
-                      <option value="الدشيرة الجهادية">الدشيرة الجهادية</option>
-                      <option value="دبدو">دبدو</option>
-                      <option value="دمنات">دمنات</option>
-                      <option value="دروة">دروة</option>
-                      <option value="دراركة">دراركة</option>
-                      <option value="الفقيه بن صالح">الفقيه بن صالح</option>
-                      <option value="فجيج">فجيج</option>
-                      <option value="فكيك">فكيك</option>
-                      <option value="فاس">فاس</option>
-                      <option value="فاس المكناس">فاس المكناس</option>
-                      <option value="فگيغ">فگيغ</option>
-                      <option value="فگيك">فگيك</option>
-                      <option value="فگيگ">فگيگ</option>
-                      <option value="فگيق">فگيق</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگيغة">فگيغة</option>
-                      <option value="فگيكة">فگيكة</option>
-                      <option value="فگيگة">فگيگة</option>
-                      <option value="فگيقة">فگيقة</option>
-                      <option value="فگيتة">فگيتة</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگوغتة">فگوغتة</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگيتة">فگيتة</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="گنتور">گنتور</option>
-                      <option value="گرفاية">گرفاية</option>
-                      <option value="گلميم">گلميم</option>
-                      <option value="گرسيف">گرسيف</option>
-                      <option value="گزناية">گزناية</option>
-                      <option value="گيگو">گيگو</option>
-                      <option value="گيسر">گيسر</option>
-                      <option value="حد بوحسوسن">حد بوحسوسن</option>
-                      <option value="حد كورت">حد كورت</option>
-                      <option value="حد وادي إفران">حد وادي إفران</option>
-                      <option value="حاج قدور">حاج قدور</option>
-                      <option value="الحطان">الحطان</option>
-                      <option value="الحوارة">الحوارة</option>
-                      <option value="إفران أطلس الصغير">إفران أطلس الصغير</option>
-                      <option value="إفران">إفران</option>
-                      <option value="إغود">إغود</option>
-                      <option value="إهدادن">إهدادن</option>
-                      <option value="إمنتانوت">إمنتانوت</option>
-                      <option value="إموزار قندر">إموزار قندر</option>
-                      <option value="إموزار مرموشة">إموزار مرموشة</option>
-                      <option value="إمزورن">إمزورن</option>
-                      <option value="إنزگان">إنزگان</option>
-                      <option value="إرھرم">إرھرم</option>
-                      <option value="إيساغون">إيساغون</option>
-                      <option value="إتزر">إتزر</option>
-                      <option value="جعادر">جعادر</option>
-                      <option value="جماعة الشايم">جماعة الشايم</option>
-                      <option value="جبھا">جبھا</option>
-                      <option value="جرادة">جرادة</option>
-                      <option value="جرف">جرف</option>
-                      <option value="جرف الملحة">جرف الملحة</option>
-                      <option value="قلعة مكونة">قلعة مكونة</option>
-                      <option value="قاريا">قاريا</option>
-                      <option value="قاريا">قاريا</option>
-                      <option value="قاريا با محمد">قاريا با محمد</option>
-                      <option value="قاريا الركمان">قاريا الركمان</option>
-                      <option value="القصبة تادلة">القصبة تادلة</option>
-                      <option value="قصيطة">قصيطة</option>
-                      <option value="كتارة">كتارة</option>
-                      <option value="كهف النصور">كهف النصور</option>
-                      <option value="القنيطرة">القنيطرة</option>
-                      <option value="كرونة">كرونة</option>
-                      <option value="كروشن">كروشن</option>
-                      <option value="الخميس الساحل">الخميس الساحل</option>
-                      <option value="الخميسات">الخميسات</option>
-                      <option value="خنيفرة">خنيفرة</option>
-                      <option value="الخنيشات">الخنيشات</option>
-                      <option value="خريبڭة">خريبڭة</option>
-                      <option value="قصر الكبير">قصر الكبير</option>
-                      <option value="لعونات">لعونات</option>
-                      <option value="العكارطة">العكارطة</option>
-                      <option value="العطاوية">العطاوية</option>
-                      <option value="العيون">العيون</option>
-                      <option value="الكويرة">الكويرة</option>
-                      <option value="الخصاص">الخصاص</option>
-                      <option value="الحراوية">الحراوية</option>
-                      <option value="لالة ميمونة">لالة ميمونة</option>
-                      <option value="لالة تكركوست">لالة تكركوست</option>
-                      <option value="العرائش">العرائش</option>
-                      <option value="الكوابلية">الكوابلية</option>
-                      <option value="لبير الجديد">لبير الجديد</option>
-                      <option value="لواليدية">لواليدية</option>
-                      <option value="لولاد">لولاد</option>
-                      <option value="القليعة">القليعة</option>
-                      <option value="معازيز">معازيز</option>
-                      <option value="مادغ">مادغ</option>
-                      <option value="مراكش">مراكش</option>
-                      <option value="مرتيل">مرتيل</option>
-                      <option value="ماسة">ماسة</option>
-                      <option value="ماطماطة">ماطماطة</option>
-                      <option value="مضيق">مضيق</option>
-                      <option value="مديونة">مديونة</option>
-                      <option value="مشرع بل قصري">مشرع بل قصري</option>
-                      <option value="مهدية">مهدية</option>
-                      <option value="مكناس">مكناس</option>
-                      <option value="المحايا">المحايا</option>
-                      <option value="ميدار">ميدار</option>
-                      <option value="ميدلت">ميدلت</option>
-                      <option value="ميسور">ميسور</option>
-                      <option value="المحمدية">المحمدية</option>
-                      <option value="مقريصيت">مقريصيت</option>
-                      <option value="مولاي عبد الله">مولاي عبد الله</option>
-                      <option value="مولاي علي الشريف">مولاي علي الشريف</option>
-                      <option value="مولاي بوعزة">مولاي بوعزة</option>
-                      <option value="مولاي بوسلهام">مولاي بوسلهام</option>
-                      <option value="مولاي إبراهيم">مولاي إبراهيم</option>
-                      <option value="مولاي إدريس زرهون">مولاي إدريس زرهون</option>
-                      <option value="مريرت">مريرت</option>
-                      <option value="الناظور">الناظور</option>
-                      <option value="نعيمة">نعيمة</option>
-                      <option value="النواصر">النواصر</option>
-                      <option value="واليديا">واليديا</option>
-                      <option value="واوزيغت">واوزيغت</option>
-                      <option value="ورزازات">ورزازات</option>
-                      <option value="واد امليل">واد امليل</option>
-                      <option value="واد هيمر">واد هيمر</option>
-                      <option value="واد لاو">واد لاو</option>
-                      <option value="واد زم">واد زم</option>
-                      <option value="وزان">وزان</option>
-                      <option value="ويسلان">ويسلان</option>
-                      <option value="وجدة">وجدة</option>
-                      <option value="ولاد عبو">ولاد عبو</option>
-                      <option value="ولاد عمران">ولاد عمران</option>
-                      <option value="ولاد عياد">ولاد عياد</option>
-                      <option value="ولاد برهيل">ولاد برهيل</option>
-                      <option value="ولاد فرج">ولاد فرج</option>
-                      <option value="ولاد غضبان">ولاد غضبان</option>
-                      <option value="ولاد حريز الساحل">ولاد حريز الساحل</option>
-                      <option value="ولاد مبارك">ولاد مبارك</option>
-                      <option value="ولاد مراح">ولاد مراح</option>
-                      <option value="ولاد سعيد">ولاد سعيد</option>
-                      <option value="ولاد طيب">ولاد طيب</option>
-                      <option value="ولاد تايمة">ولاد تايمة</option>
-                      <option value="ولاد يايش">ولاد يايش</option>
-                      <option value="ولاد زبير">ولاد زبير</option>
-                      <option value="ولماس">ولماس</option>
-                      <option value="أم الگردان">أم الگردان</option>
-                      <option value="أوناكة">أوناكة</option>
-                      <option value="أوطاط الحاج">أوطاط الحاج</option>
-                      <option value="الرباط">الرباط</option>
-                      <option value="رأس العين">رأس العين</option>
-                      <option value="رأس الماء">رأس الماء</option>
-                      <option value="ريبات الخير">ريبات الخير</option>
-                      <option value="ريصاني">ريصاني</option>
-                      <option value="الرماني">الرماني</option>
-                      <option value="سبع أيون">سبع أيون</option>
-                      <option value="أسفي">أسفي</option>
-                      <option value="السعيدية">السعيدية</option>
-                      <option value="سلا">سلا</option>
-                      <option value="سبت الگردان">سبت الگردان</option>
-                      <option value="سبت المعاريف">سبت المعاريف</option>
-                      <option value="سبت كزولة">سبت كزولة</option>
-                      <option value="سبت جهجوه">سبت جهجوه</option>
-                      <option value="صفرو">صفرو</option>
-                      <option value="سلوان">سلوان</option>
-                      <option value="السمارة">السمارة</option>
-                      <option value="سطات">سطات</option>
-                      <option value="سيدي المختار">سيدي المختار</option>
-                      <option value="سيدي زوين">سيدي زوين</option>
-                      <option value="سيدي عبد الله غيات">سيدي عبد الله غيات</option>
-                      <option value="سيدي عدي">سيدي عدي</option>
-                      <option value="سيدي أحمد">سيدي أحمد</option>
-                      <option value="سيدي علي بن حمدوش">سيدي علي بن حمدوش</option>
-                      <option value="سيدي علال البحراوي">سيدي علال البحراوي</option>
-                      <option value="سيدي علال التازي">سيدي علال التازي</option>
-                      <option value="سيدي بنور">سيدي بنور</option>
-                      <option value="سيدي بوعثمان">سيدي بوعثمان</option>
-                      <option value="سيدي بوبكر">سيدي بوبكر</option>
-                      <option value="سيدي بوكنادل">سيدي بوكنادل</option>
-                      <option value="سيدي بوزيد">سيدي بوزيد</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي حجاج واد حسار">سيدي حجاج واد حسار</option>
-                      <option value="سيدي إفني">سيدي إفني</option>
-                      <option value="سيدي جابر">سيدي جابر</option>
-                      <option value="سيدي كنكوش">سيدي كنكوش</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي اليماني">سيدي اليماني</option>
-                      <option value="سيدي محمد بن علي">سيدي محمد بن علي</option>
-                      <option value="سيدي رحال">سيدي رحال</option>
-                      <option value="سيدي رحال الشطاي">سيدي رحال الشطاي</option>
-                      <option value="سيدي سليمان">سيدي سليمان</option>
-                      <option value="سيدي سليمان الشراع">سيدي سليمان الشراع</option>
-                      <option value="سيدي سليمان الجبيل">سيدي سليمان الجبيل</option>
-                      <option value="سيدي سليمان التازي">سيدي سليمان التازي</option>
-                      <option value="سيدي إسماعيل">سيدي إسماعيل</option>
-                      <option value="سيدي طيبي">سيدي طيبي</option>
-                      <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
-                      <option value="سيدي يوسف بن أحمد">سيدي يوسف بن أحمد</option>
-                      <option value="سيدي يوسف بن علي">سيدي يوسف بن علي</option>
-                      <option value="سيدي يوسف بن حسن">سيدي يوسف بن حسن</option>
-                      <option value="سيدي يوسف مختار">سيدي يوسف مختار</option>
-                      <option value="سجلماسة">سجلماسة</option>
-                      <option value="سيدي بوهريا">سيدي بوهريا</option>
-                      <option value="الصخيرات">الصخيرات</option>
-                      <option value="سخور الرحامنة">سخور الرحامنة</option>
-                      <option value="سيدي علال التازي">سيدي علال التازي</option>
-                      <option value="سيدي بنور">سيدي بنور</option>
-                      <option value="سيدي بوعثمان">سيدي بوعثمان</option>
-                      <option value="سيدي بوزيد">سيدي بوزيد</option>
-                      <option value="سيدي حجاج واد حسار">سيدي حجاج واد حسار</option>
-                      <option value="سيدي إفني">سيدي إفني</option>
-                      <option value="سيدي جابر">سيدي جابر</option>
-                      <option value="سيدي كنكوش">سيدي كنكوش</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي اليماني">سيدي اليماني</option>
-                      <option value="سيدي محمد بن علي">سيدي محمد بن علي</option>
-                      <option value="سيدي رحال">سيدي رحال</option>
-                      <option value="سيدي رحال الشطاي">سيدي رحال الشطاي</option>
-                      <option value="سيدي سليمان">سيدي سليمان</option>
-                      <option value="سيدي سليمان الشراع">سيدي سليمان الشراع</option>
-                      <option value="سيدي سليمان الجبيل">سيدي سليمان الجبيل</option>
-                      <option value="سيدي سليمان التازي">سيدي سليمان التازي</option>
-                      <option value="سيدي إسماعيل">سيدي إسماعيل</option>
-                      <option value="سيدي طيبي">سيدي طيبي</option>
-                      <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
-                      <option value="سيدي يوسف بن أحمد">سيدي يوسف بن أحمد</option>
-                      <option value="سيدي يوسف بن علي">سيدي يوسف بن علي</option>
-                      <option value="سيدي يوسف بن حسن">سيدي يوسف بن حسن</option>
-                      <option value="سيدي يوسف مختار">سيدي يوسف مختار</option>
-                      <option value="سجلماسة">سجلماسة</option>
-                      <option value="سيدي بوهريا">سيدي بوهريا</option>
-                      <option value="الصخيرات">الصخيرات</option>
-                      <option value="سخور الرحامنة">سخور الرحامنة</option>
-                      <option value="السميمو">السميمو</option>
-                      <option value="السوالم">السوالم</option>
-                      <option value="سوق الأربعاء">سوق الأربعاء</option>
-                      <option value="سوق الأربعاء">سوق الأربعاء</option>
-                      <option value="سوق سبت أولاد النمة">سوق سبت أولاد النمة</option>
-                      <option value="سوق تلتة زمامرة">سوق تلتة زمامرة</option>
-                      <option value="سري كنا">سري كنا</option>
-                      <option value="سيدي سليمان مول الكيفان">سيدي سليمان مول الكيفان</option>
-                      <option value="تادرت">تادرت</option>
-                      <option value="تاغجيجت">تاغجيجت</option>
-                      <option value="تحالة">تحالة</option>
-                      <option value="تحناوت">تحناوت</option>
-                      <option value="تاينست">تاينست</option>
-                      <option value="تالوين">تالوين</option>
-                      <option value="تالمست">تالمست</option>
-                      <option value="تمنار">تمنار</option>
-                      <option value="تاموروت">تاموروت</option>
-                      <option value="طانطان">طانطان</option>
-                      <option value="تانالت">تانالت</option>
-                      <option value="طنجة">طنجة</option>
-                      <option value="تاونات">تاونات</option>
-                      <option value="تاوريرت">تاوريرت</option>
-                      <option value="تارودانت">تارودانت</option>
-                      <option value="تارودانت">تارودانت</option>
-                      <option value="طاطا">طاطا</option>
-                      <option value="تازوتة">تازوتة</option>
-                      <option value="تازارين">تازارين</option>
-                      <option value="تندرارة">تندرارة</option>
-                      <option value="تطوان">تطوان</option>
-                      <option value="ثر سوق">ثر سوق</option>
-                      <option value="تيشوت">تيشوت</option>
-                      <option value="تيداز">تيداز</option>
-                      <option value="تيفلت">تيفلت</option>
-                      <option value="تيفنيت">تيفنيت</option>
-                      <option value="تيفرة">تيفرة</option>
-                      <option value="تيفريت">تيفريت</option>
-                      <option value="تيغسالين">تيغسالين</option>
-                      <option value="تيغزة">تيغزة</option>
-                      <option value="تيمحديت">تيمحديت</option>
-                      <option value="تيموليلت">تيموليلت</option>
-                      <option value="تنجداد">تنجداد</option>
-                      <option value="تزنيت">تزنيت</option>
-                      <option value="تيزگيت">تيزگيت</option>
-                      <option value="تيزي واصلي">تيزي واصلي</option>
-                      <option value="تيزي وزو">تيزي وزو</option>
-                      <option value="تلتة توفيق">تلتة توفيق</option>
-                      <option value="تنين شتوكة">تنين شتوكة</option>
-                      <option value="تنين أوريكة">تنين أوريكة</option>
-                      <option value="توارگة">توارگة</option>
-                      <option value="تويمة">تويمة</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تولكرم">تولكرم</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تومليلين">تومليلين</option>
-                      <option value="تونفيت">تونفيت</option>
-                      <option value="زاكورة">زاكورة</option>
-                      <option value="زايو">زايو</option>
-                      <option value="زلاق">زلاق</option>
-                      <option value="زمامرة">زمامرة</option>
-                      <option value="زرهون">زرهون</option>
-                      <option value="زرهوني">زرهوني</option>
-                      <option value="زركتان">زركتان</option>
-                      <option value="زمران">زمران</option>
-                      <option value="زناتة">زناتة</option>
-                      <option value="زراردة">زراردة</option>
-                      <option value="زيرارة">زيرارة</option>
-                      <option value="زيوار">زيوار</option>
-                      <option value="زنادة">زنادة</option>
-                      <option value="الزومي">الزومي</option>
-                      <option value="زرويلة">زرويلة</option>
-                      <option value="زريزر">زريزر</option>
-                    
-                </select>
+              <input name="date_naissance" class="form-control" type="date" required />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Birth day-->
-
-        <div class="form-group">
-          <label class="col-md-4 control-label">Date de Naissance</label>
-          <div class="col-md-4">
-            <div>
-              <input name="date_naissance" class="form-control" type="date" required />
-            </div>
-          </div>
-        </div>
 
         <!-- Family situation -->
         <div class="form-group">
@@ -1057,15 +657,17 @@
               <div class="form1-group">
                 <div class="col-md-4">
                   <label class="col-md-4 control-label">Sexe</label>
-                  <select name="marie_enf_sex_fr[]" id="marie_enf_sex_fr">
-                    <option value="Male">Male</option>
+                  <select name="marie_enf_sex_fr[]" class="formc1 selectpicker" id="marie_enf_sex_fr">
+                  <option value="">Sexe</option>  
+                  <option value="Male">Male</option>
                     <option value="Female">Female</option>
                   </select>
                 </div>
                 <div class="col-md-4 right">
                   <label class="col-md-4 control-label">الجنس</label>
-                  <select name="marie_enf_sex_ar[]" id="marie_enf_sex_ar">
-                    <option value="ذكر">ذكر</option>
+                  <select name="marie_enf_sex_ar[]" class="formc1 selectpicker" id="marie_enf_sex_ar">
+                  <option value="">الجنس</option>  
+                  <option value="ذكر">ذكر</option>
                     <option value="أنثى">أنثى</option>
                   </select>
                 </div>
@@ -1497,424 +1099,15 @@
                   </div>
                 </div>
                 <div class="col-md-4 right">
-                  <label class="col-md-4 control-label right">مكان الإزدياد</label>
+                <label class="col-md-4 control-label right">Date de Naissance</label>
                   <div>
-                    <select name="marie_enf_lieu_Nai_ar[]" class="formc1 right">
-                      <option value=" ">مكان الإزدياد</option>
-                      <option value="أفورار">أفورار</option>
-                      <option value="أكادير">أكادير</option>
-                      <option value="أغبالا">أغبالا</option>
-                      <option value="أغبالو">أغبالو</option>
-                      <option value="أكدز">أكدز</option>
-                      <option value="أغوراي">أغوراي</option>
-                      <option value="أگلموس">أگلموس</option>
-                      <option value="أحفير">أحفير</option>
-                      <option value="عين لهوا">عين لهوا</option>
-                      <option value="عين بني مطهر">عين بني مطهر</option>
-                      <option value="عين شقاق">عين شقاق</option>
-                      <option value="عين الدريج">عين الدريج</option>
-                      <option value="عين العودة">عين العودة</option>
-                      <option value="عين الركادة">عين الركادة</option>
-                      <option value="عين حرودة">عين حرودة</option>
-                      <option value="عين جمعة">عين جمعة</option>
-                      <option value="عين كرمة">عين كرمة</option>
-                      <option value="عين تاوجدات">عين تاوجدات</option>
-                      <option value="آيت يعزة">آيت يعزة</option>
-                      <option value="آيت باها">آيت باها</option>
-                      <option value="آيت بوبيدم">آيت بوبيدم</option>
-                      <option value="آيت داود">آيت داود</option>
-                      <option value="آيت إسحاق">آيت إسحاق</option>
-                      <option value="آيت ملول">آيت ملول</option>
-                      <option value="آيت أورير">آيت أورير</option>
-                      <option value="أكا">أكا</option>
-                      <option value="أكليم">أكليم</option>
-                      <option value="أكنول">أكنول</option>
-                      <option value="عجدير">عجدير</option>
-                      <option value="العروي">العروي</option>
-                      <option value="الحسيمة">الحسيمة</option>
-                      <option value="النيف">النيف</option>
-                      <option value="أمالو إغريبن">أمالو إغريبن</option>
-                      <option value="أمزميز">أمزميز</option>
-                      <option value="أوفوس">أوفوس</option>
-                      <option value="أولوز">أولوز</option>
-                      <option value="أورير">أورير</option>
-                      <option value="الرباوة">الرباوة</option>
-                      <option value="أرفود">أرفود</option>
-                      <option value="أسا">أسا</option>
-                      <option value="الساحريج">الساحريج</option>
-                      <option value="أصيلة">أصيلة</option>
-                      <option value="أزمور">أزمور</option>
-                      <option value="أزيلال">أزيلال</option>
-                      <option value="أزرو">أزرو</option>
-                      <option value="باب برد">باب برد</option>
-                      <option value="باب تازة">باب تازة</option>
-                      <option value="بجاض">بجاض</option>
-                      <option value="بن أحمد">بن أحمد</option>
-                      <option value="بن جرير">بن جرير</option>
-                      <option value="بن الطاهر">بن الطاهر</option>
-                      <option value="بن يخلف">بن يخلف</option>
-                      <option value="بني ملال">بني ملال</option>
-                      <option value="بن سليمان">بن سليمان</option>
-                      <option value="بركان">بركان</option>
-                      <option value="برشيد">برشيد</option>
-                      <option value="بحاليل">بحاليل</option>
-                      <option value="بيوگرا">بيوگرا</option>
-                      <option value="بني أنصار">بني أنصار</option>
-                      <option value="بني بوعياش">بني بوعياش</option>
-                      <option value="بني شيكر">بني شيكر</option>
-                      <option value="بني درار">بني درار</option>
-                      <option value="بني حديفة">بني حديفة</option>
-                      <option value="بني تجيت">بني تجيت</option>
-                      <option value="بوعنان">بوعنان</option>
-                      <option value="بوعرفة">بوعرفة</option>
-                      <option value="بودنيب">بودنيب</option>
-                      <option value="بوگدرة">بوگدرة</option>
-                      <option value="بوهديلة">بوهديلة</option>
-                      <option value="بويزكارن">بويزكارن</option>
-                      <option value="بوجدور">بوجدور</option>
-                      <option value="بوجنيبة">بوجنيبة</option>
-                      <option value="بولانوار">بولانوار</option>
-                      <option value="بولمان">بولمان</option>
-                      <option value="بولمان الدادس">بولمان الدادس</option>
-                      <option value="بومية">بومية</option>
-                      <option value="بوسكورة">بوسكورة</option>
-                      <option value="بوزنيقة">بوزنيقة</option>
-                      <option value="بوزتات">بوزتات</option>
-                      <option value="برادية">برادية</option>
-                      <option value="بريكشة">بريكشة</option>
-                      <option value="بزو">بزو</option>
-                      <option value="الدار البيضاء">الدار البيضاء</option>
-                      <option value="شفشاون">شفشاون</option>
-                      <option value="شيشاوة">شيشاوة</option>
-                      <option value="الداخلة">الداخلة</option>
-                      <option value="دار بني كريش">دار بني كريش</option>
-                      <option value="دار الشاوي">دار الشاوي</option>
-                      <option value="دار الكبداني">دار الكبداني</option>
-                      <option value="دار الواعري">دار الواعري</option>
-                      <option value="دار ولد زيدوه">دار ولد زيدوه</option>
-                      <option value="الدشيرة الجهادية">الدشيرة الجهادية</option>
-                      <option value="دبدو">دبدو</option>
-                      <option value="دمنات">دمنات</option>
-                      <option value="دروة">دروة</option>
-                      <option value="دراركة">دراركة</option>
-                      <option value="الفقيه بن صالح">الفقيه بن صالح</option>
-                      <option value="فجيج">فجيج</option>
-                      <option value="فكيك">فكيك</option>
-                      <option value="فاس">فاس</option>
-                      <option value="فاس المكناس">فاس المكناس</option>
-                      <option value="فگيغ">فگيغ</option>
-                      <option value="فگيك">فگيك</option>
-                      <option value="فگيگ">فگيگ</option>
-                      <option value="فگيق">فگيق</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگيغة">فگيغة</option>
-                      <option value="فگيكة">فگيكة</option>
-                      <option value="فگيگة">فگيگة</option>
-                      <option value="فگيقة">فگيقة</option>
-                      <option value="فگيتة">فگيتة</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگوغتة">فگوغتة</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگيتة">فگيتة</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="گنتور">گنتور</option>
-                      <option value="گرفاية">گرفاية</option>
-                      <option value="گلميم">گلميم</option>
-                      <option value="گرسيف">گرسيف</option>
-                      <option value="گزناية">گزناية</option>
-                      <option value="گيگو">گيگو</option>
-                      <option value="گيسر">گيسر</option>
-                      <option value="حد بوحسوسن">حد بوحسوسن</option>
-                      <option value="حد كورت">حد كورت</option>
-                      <option value="حد وادي إفران">حد وادي إفران</option>
-                      <option value="حاج قدور">حاج قدور</option>
-                      <option value="الحطان">الحطان</option>
-                      <option value="الحوارة">الحوارة</option>
-                      <option value="إفران أطلس الصغير">إفران أطلس الصغير</option>
-                      <option value="إفران">إفران</option>
-                      <option value="إغود">إغود</option>
-                      <option value="إهدادن">إهدادن</option>
-                      <option value="إمنتانوت">إمنتانوت</option>
-                      <option value="إموزار قندر">إموزار قندر</option>
-                      <option value="إموزار مرموشة">إموزار مرموشة</option>
-                      <option value="إمزورن">إمزورن</option>
-                      <option value="إنزگان">إنزگان</option>
-                      <option value="إرھرم">إرھرم</option>
-                      <option value="إيساغون">إيساغون</option>
-                      <option value="إتزر">إتزر</option>
-                      <option value="جعادر">جعادر</option>
-                      <option value="جماعة الشايم">جماعة الشايم</option>
-                      <option value="جبھا">جبھا</option>
-                      <option value="جرادة">جرادة</option>
-                      <option value="جرف">جرف</option>
-                      <option value="جرف الملحة">جرف الملحة</option>
-                      <option value="قلعة مكونة">قلعة مكونة</option>
-                      <option value="قاريا">قاريا</option>
-                      <option value="قاريا">قاريا</option>
-                      <option value="قاريا با محمد">قاريا با محمد</option>
-                      <option value="قاريا الركمان">قاريا الركمان</option>
-                      <option value="القصبة تادلة">القصبة تادلة</option>
-                      <option value="قصيطة">قصيطة</option>
-                      <option value="كتارة">كتارة</option>
-                      <option value="كهف النصور">كهف النصور</option>
-                      <option value="القنيطرة">القنيطرة</option>
-                      <option value="كرونة">كرونة</option>
-                      <option value="كروشن">كروشن</option>
-                      <option value="الخميس الساحل">الخميس الساحل</option>
-                      <option value="الخميسات">الخميسات</option>
-                      <option value="خنيفرة">خنيفرة</option>
-                      <option value="الخنيشات">الخنيشات</option>
-                      <option value="خريبڭة">خريبڭة</option>
-                      <option value="قصر الكبير">قصر الكبير</option>
-                      <option value="لعونات">لعونات</option>
-                      <option value="العكارطة">العكارطة</option>
-                      <option value="العطاوية">العطاوية</option>
-                      <option value="العيون">العيون</option>
-                      <option value="الكويرة">الكويرة</option>
-                      <option value="الخصاص">الخصاص</option>
-                      <option value="الحراوية">الحراوية</option>
-                      <option value="لالة ميمونة">لالة ميمونة</option>
-                      <option value="لالة تكركوست">لالة تكركوست</option>
-                      <option value="العرائش">العرائش</option>
-                      <option value="الكوابلية">الكوابلية</option>
-                      <option value="لبير الجديد">لبير الجديد</option>
-                      <option value="لواليدية">لواليدية</option>
-                      <option value="لولاد">لولاد</option>
-                      <option value="القليعة">القليعة</option>
-                      <option value="معازيز">معازيز</option>
-                      <option value="مادغ">مادغ</option>
-                      <option value="مراكش">مراكش</option>
-                      <option value="مرتيل">مرتيل</option>
-                      <option value="ماسة">ماسة</option>
-                      <option value="ماطماطة">ماطماطة</option>
-                      <option value="مضيق">مضيق</option>
-                      <option value="مديونة">مديونة</option>
-                      <option value="مشرع بل قصري">مشرع بل قصري</option>
-                      <option value="مهدية">مهدية</option>
-                      <option value="مكناس">مكناس</option>
-                      <option value="المحايا">المحايا</option>
-                      <option value="ميدار">ميدار</option>
-                      <option value="ميدلت">ميدلت</option>
-                      <option value="ميسور">ميسور</option>
-                      <option value="المحمدية">المحمدية</option>
-                      <option value="مقريصيت">مقريصيت</option>
-                      <option value="مولاي عبد الله">مولاي عبد الله</option>
-                      <option value="مولاي علي الشريف">مولاي علي الشريف</option>
-                      <option value="مولاي بوعزة">مولاي بوعزة</option>
-                      <option value="مولاي بوسلهام">مولاي بوسلهام</option>
-                      <option value="مولاي إبراهيم">مولاي إبراهيم</option>
-                      <option value="مولاي إدريس زرهون">مولاي إدريس زرهون</option>
-                      <option value="مريرت">مريرت</option>
-                      <option value="الناظور">الناظور</option>
-                      <option value="نعيمة">نعيمة</option>
-                      <option value="النواصر">النواصر</option>
-                      <option value="واليديا">واليديا</option>
-                      <option value="واوزيغت">واوزيغت</option>
-                      <option value="ورزازات">ورزازات</option>
-                      <option value="واد امليل">واد امليل</option>
-                      <option value="واد هيمر">واد هيمر</option>
-                      <option value="واد لاو">واد لاو</option>
-                      <option value="واد زم">واد زم</option>
-                      <option value="وزان">وزان</option>
-                      <option value="ويسلان">ويسلان</option>
-                      <option value="وجدة">وجدة</option>
-                      <option value="ولاد عبو">ولاد عبو</option>
-                      <option value="ولاد عمران">ولاد عمران</option>
-                      <option value="ولاد عياد">ولاد عياد</option>
-                      <option value="ولاد برهيل">ولاد برهيل</option>
-                      <option value="ولاد فرج">ولاد فرج</option>
-                      <option value="ولاد غضبان">ولاد غضبان</option>
-                      <option value="ولاد حريز الساحل">ولاد حريز الساحل</option>
-                      <option value="ولاد مبارك">ولاد مبارك</option>
-                      <option value="ولاد مراح">ولاد مراح</option>
-                      <option value="ولاد سعيد">ولاد سعيد</option>
-                      <option value="ولاد طيب">ولاد طيب</option>
-                      <option value="ولاد تايمة">ولاد تايمة</option>
-                      <option value="ولاد يايش">ولاد يايش</option>
-                      <option value="ولاد زبير">ولاد زبير</option>
-                      <option value="ولماس">ولماس</option>
-                      <option value="أم الگردان">أم الگردان</option>
-                      <option value="أوناكة">أوناكة</option>
-                      <option value="أوطاط الحاج">أوطاط الحاج</option>
-                      <option value="الرباط">الرباط</option>
-                      <option value="رأس العين">رأس العين</option>
-                      <option value="رأس الماء">رأس الماء</option>
-                      <option value="ريبات الخير">ريبات الخير</option>
-                      <option value="ريصاني">ريصاني</option>
-                      <option value="الرماني">الرماني</option>
-                      <option value="سبع أيون">سبع أيون</option>
-                      <option value="أسفي">أسفي</option>
-                      <option value="السعيدية">السعيدية</option>
-                      <option value="سلا">سلا</option>
-                      <option value="سبت الگردان">سبت الگردان</option>
-                      <option value="سبت المعاريف">سبت المعاريف</option>
-                      <option value="سبت كزولة">سبت كزولة</option>
-                      <option value="سبت جهجوه">سبت جهجوه</option>
-                      <option value="صفرو">صفرو</option>
-                      <option value="سلوان">سلوان</option>
-                      <option value="السمارة">السمارة</option>
-                      <option value="سطات">سطات</option>
-                      <option value="سيدي المختار">سيدي المختار</option>
-                      <option value="سيدي زوين">سيدي زوين</option>
-                      <option value="سيدي عبد الله غيات">سيدي عبد الله غيات</option>
-                      <option value="سيدي عدي">سيدي عدي</option>
-                      <option value="سيدي أحمد">سيدي أحمد</option>
-                      <option value="سيدي علي بن حمدوش">سيدي علي بن حمدوش</option>
-                      <option value="سيدي علال البحراوي">سيدي علال البحراوي</option>
-                      <option value="سيدي علال التازي">سيدي علال التازي</option>
-                      <option value="سيدي بنور">سيدي بنور</option>
-                      <option value="سيدي بوعثمان">سيدي بوعثمان</option>
-                      <option value="سيدي بوبكر">سيدي بوبكر</option>
-                      <option value="سيدي بوكنادل">سيدي بوكنادل</option>
-                      <option value="سيدي بوزيد">سيدي بوزيد</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي حجاج واد حسار">سيدي حجاج واد حسار</option>
-                      <option value="سيدي إفني">سيدي إفني</option>
-                      <option value="سيدي جابر">سيدي جابر</option>
-                      <option value="سيدي كنكوش">سيدي كنكوش</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي اليماني">سيدي اليماني</option>
-                      <option value="سيدي محمد بن علي">سيدي محمد بن علي</option>
-                      <option value="سيدي رحال">سيدي رحال</option>
-                      <option value="سيدي رحال الشطاي">سيدي رحال الشطاي</option>
-                      <option value="سيدي سليمان">سيدي سليمان</option>
-                      <option value="سيدي سليمان الشراع">سيدي سليمان الشراع</option>
-                      <option value="سيدي سليمان الجبيل">سيدي سليمان الجبيل</option>
-                      <option value="سيدي سليمان التازي">سيدي سليمان التازي</option>
-                      <option value="سيدي إسماعيل">سيدي إسماعيل</option>
-                      <option value="سيدي طيبي">سيدي طيبي</option>
-                      <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
-                      <option value="سيدي يوسف بن أحمد">سيدي يوسف بن أحمد</option>
-                      <option value="سيدي يوسف بن علي">سيدي يوسف بن علي</option>
-                      <option value="سيدي يوسف بن حسن">سيدي يوسف بن حسن</option>
-                      <option value="سيدي يوسف مختار">سيدي يوسف مختار</option>
-                      <option value="سجلماسة">سجلماسة</option>
-                      <option value="سيدي بوهريا">سيدي بوهريا</option>
-                      <option value="الصخيرات">الصخيرات</option>
-                      <option value="سخور الرحامنة">سخور الرحامنة</option>
-                      <option value="سيدي علال التازي">سيدي علال التازي</option>
-                      <option value="سيدي بنور">سيدي بنور</option>
-                      <option value="سيدي بوعثمان">سيدي بوعثمان</option>
-                      <option value="سيدي بوزيد">سيدي بوزيد</option>
-                      <option value="سيدي حجاج واد حسار">سيدي حجاج واد حسار</option>
-                      <option value="سيدي إفني">سيدي إفني</option>
-                      <option value="سيدي جابر">سيدي جابر</option>
-                      <option value="سيدي كنكوش">سيدي كنكوش</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي اليماني">سيدي اليماني</option>
-                      <option value="سيدي محمد بن علي">سيدي محمد بن علي</option>
-                      <option value="سيدي رحال">سيدي رحال</option>
-                      <option value="سيدي رحال الشطاي">سيدي رحال الشطاي</option>
-                      <option value="سيدي سليمان">سيدي سليمان</option>
-                      <option value="سيدي سليمان الشراع">سيدي سليمان الشراع</option>
-                      <option value="سيدي سليمان الجبيل">سيدي سليمان الجبيل</option>
-                      <option value="سيدي سليمان التازي">سيدي سليمان التازي</option>
-                      <option value="سيدي إسماعيل">سيدي إسماعيل</option>
-                      <option value="سيدي طيبي">سيدي طيبي</option>
-                      <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
-                      <option value="سيدي يوسف بن أحمد">سيدي يوسف بن أحمد</option>
-                      <option value="سيدي يوسف بن علي">سيدي يوسف بن علي</option>
-                      <option value="سيدي يوسف بن حسن">سيدي يوسف بن حسن</option>
-                      <option value="سيدي يوسف مختار">سيدي يوسف مختار</option>
-                      <option value="سجلماسة">سجلماسة</option>
-                      <option value="سيدي بوهريا">سيدي بوهريا</option>
-                      <option value="الصخيرات">الصخيرات</option>
-                      <option value="سخور الرحامنة">سخور الرحامنة</option>
-                      <option value="السميمو">السميمو</option>
-                      <option value="السوالم">السوالم</option>
-                      <option value="سوق الأربعاء">سوق الأربعاء</option>
-                      <option value="سوق الأربعاء">سوق الأربعاء</option>
-                      <option value="سوق سبت أولاد النمة">سوق سبت أولاد النمة</option>
-                      <option value="سوق تلتة زمامرة">سوق تلتة زمامرة</option>
-                      <option value="سري كنا">سري كنا</option>
-                      <option value="سيدي سليمان مول الكيفان">سيدي سليمان مول الكيفان</option>
-                      <option value="تادرت">تادرت</option>
-                      <option value="تاغجيجت">تاغجيجت</option>
-                      <option value="تحالة">تحالة</option>
-                      <option value="تحناوت">تحناوت</option>
-                      <option value="تاينست">تاينست</option>
-                      <option value="تالوين">تالوين</option>
-                      <option value="تالمست">تالمست</option>
-                      <option value="تمنار">تمنار</option>
-                      <option value="تاموروت">تاموروت</option>
-                      <option value="طانطان">طانطان</option>
-                      <option value="تانالت">تانالت</option>
-                      <option value="طنجة">طنجة</option>
-                      <option value="تاونات">تاونات</option>
-                      <option value="تاوريرت">تاوريرت</option>
-                      <option value="تارودانت">تارودانت</option>
-                      <option value="تارودانت">تارودانت</option>
-                      <option value="طاطا">طاطا</option>
-                      <option value="تازوتة">تازوتة</option>
-                      <option value="تازارين">تازارين</option>
-                      <option value="تندرارة">تندرارة</option>
-                      <option value="تطوان">تطوان</option>
-                      <option value="ثر سوق">ثر سوق</option>
-                      <option value="تيشوت">تيشوت</option>
-                      <option value="تيداز">تيداز</option>
-                      <option value="تيفلت">تيفلت</option>
-                      <option value="تيفنيت">تيفنيت</option>
-                      <option value="تيفرة">تيفرة</option>
-                      <option value="تيفريت">تيفريت</option>
-                      <option value="تيغسالين">تيغسالين</option>
-                      <option value="تيغزة">تيغزة</option>
-                      <option value="تيمحديت">تيمحديت</option>
-                      <option value="تيموليلت">تيموليلت</option>
-                      <option value="تنجداد">تنجداد</option>
-                      <option value="تزنيت">تزنيت</option>
-                      <option value="تيزگيت">تيزگيت</option>
-                      <option value="تيزي واصلي">تيزي واصلي</option>
-                      <option value="تيزي وزو">تيزي وزو</option>
-                      <option value="تلتة توفيق">تلتة توفيق</option>
-                      <option value="تنين شتوكة">تنين شتوكة</option>
-                      <option value="تنين أوريكة">تنين أوريكة</option>
-                      <option value="توارگة">توارگة</option>
-                      <option value="تويمة">تويمة</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تولكرم">تولكرم</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تومليلين">تومليلين</option>
-                      <option value="تونفيت">تونفيت</option>
-                      <option value="زاكورة">زاكورة</option>
-                      <option value="زايو">زايو</option>
-                      <option value="زلاق">زلاق</option>
-                      <option value="زمامرة">زمامرة</option>
-                      <option value="زرهون">زرهون</option>
-                      <option value="زرهوني">زرهوني</option>
-                      <option value="زركتان">زركتان</option>
-                      <option value="زمران">زمران</option>
-                      <option value="زناتة">زناتة</option>
-                      <option value="زراردة">زراردة</option>
-                      <option value="زيرارة">زيرارة</option>
-                      <option value="زيوار">زيوار</option>
-                      <option value="زنادة">زنادة</option>
-                      <option value="الزومي">الزومي</option>
-                      <option value="زرويلة">زرويلة</option>
-                      <option value="زريزر">زريزر</option>
-
-                    </select>
+                  <input name="marie_enf_date_naissance[]" class="form-control" type="date" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- birth day-->
 
-            <div class="form-group">
-              <label class="col-md-4 control-label">Date de Naissance</label>
-              <div class="col-md-4">
-                <div>
-                  <input name="marie_enf_date_naissance[]" class="form-control" type="date" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -1971,33 +1164,20 @@
 
             <div class="form-group">
               <div class="form1-group">
-                <div class="col-md-4 right">
-                  <label class="col-md-4 control-label">الجنس</label>
-                  <div class="radio right">
-                    <label>
-                      <input type="radio" name="divorce_enf_sexe_ar" value="ذكر" />
-                      ذكر
-                    </label>
-                  </div>
-                  <div class="radio right">
-                    <label>
-                      <input type="radio" name="divorce_enf_sexe_ar" value="أنثى" />
-                      أنثى
-                    </label>
-                  </div>
-                </div>
-
+              
                 <div class="col-md-4">
                   <label class="col-md-4 control-label">Sexe</label>
-                  <select name="divorce_enf_sexe_fr[]" id="divorce_enf_sexe_fr">
-                    <option value="Male">Male</option>
+                  <select name="divorce_enf_sexe_fr[]" class="formc1 selectpicker" id="divorce_enf_sexe_fr">
+                  <option value="">Sexe</option>  
+                  <option value="Male">Male</option>
                     <option value="Female">Female</option>
                   </select>
                 </div>
                 <div class="col-md-4 right">
                   <label class="col-md-4 control-label">الجنس</label>
-                  <select name="divorce_enf_sexe_ar[]" id="divorce_enf_sexe_ar">
-                    <option value="ذكر">ذكر</option>
+                  <select name="divorce_enf_sexe_ar[]" class="formc1 selectpicker" id="divorce_enf_sexe_ar">
+                  <option value="">الجنس</option>  
+                  <option value="ذكر">ذكر</option>
                     <option value="أنثى">أنثى</option>
                   </select>
                 </div>
@@ -2430,422 +1610,14 @@
                   </div>
                 </div>
                 <div class="col-md-4 right">
-                  <label class="col-md-4 control-label right">مكان الإزدياد</label>
+                <label class="col-md-4 control-label right">Date de Naissance</label>
                   <div>
-                    <select name="divorce_enf_lieu_Nai_ar[]" id="divorce_enf_lieu_Nai_ar" class="formc1 right">                    
-                      <option value=" ">مكان الإزدياد</option>
-                      <option value="أفورار">أفورار</option>
-                      <option value="أكادير">أكادير</option>
-                      <option value="أغبالا">أغبالا</option>
-                      <option value="أغبالو">أغبالو</option>
-                      <option value="أكدز">أكدز</option>
-                      <option value="أغوراي">أغوراي</option>
-                      <option value="أگلموس">أگلموس</option>
-                      <option value="أحفير">أحفير</option>
-                      <option value="عين لهوا">عين لهوا</option>
-                      <option value="عين بني مطهر">عين بني مطهر</option>
-                      <option value="عين شقاق">عين شقاق</option>
-                      <option value="عين الدريج">عين الدريج</option>
-                      <option value="عين العودة">عين العودة</option>
-                      <option value="عين الركادة">عين الركادة</option>
-                      <option value="عين حرودة">عين حرودة</option>
-                      <option value="عين جمعة">عين جمعة</option>
-                      <option value="عين كرمة">عين كرمة</option>
-                      <option value="عين تاوجدات">عين تاوجدات</option>
-                      <option value="آيت يعزة">آيت يعزة</option>
-                      <option value="آيت باها">آيت باها</option>
-                      <option value="آيت بوبيدم">آيت بوبيدم</option>
-                      <option value="آيت داود">آيت داود</option>
-                      <option value="آيت إسحاق">آيت إسحاق</option>
-                      <option value="آيت ملول">آيت ملول</option>
-                      <option value="آيت أورير">آيت أورير</option>
-                      <option value="أكا">أكا</option>
-                      <option value="أكليم">أكليم</option>
-                      <option value="أكنول">أكنول</option>
-                      <option value="عجدير">عجدير</option>
-                      <option value="العروي">العروي</option>
-                      <option value="الحسيمة">الحسيمة</option>
-                      <option value="النيف">النيف</option>
-                      <option value="أمالو إغريبن">أمالو إغريبن</option>
-                      <option value="أمزميز">أمزميز</option>
-                      <option value="أوفوس">أوفوس</option>
-                      <option value="أولوز">أولوز</option>
-                      <option value="أورير">أورير</option>
-                      <option value="الرباوة">الرباوة</option>
-                      <option value="أرفود">أرفود</option>
-                      <option value="أسا">أسا</option>
-                      <option value="الساحريج">الساحريج</option>
-                      <option value="أصيلة">أصيلة</option>
-                      <option value="أزمور">أزمور</option>
-                      <option value="أزيلال">أزيلال</option>
-                      <option value="أزرو">أزرو</option>
-                      <option value="باب برد">باب برد</option>
-                      <option value="باب تازة">باب تازة</option>
-                      <option value="بجاض">بجاض</option>
-                      <option value="بن أحمد">بن أحمد</option>
-                      <option value="بن جرير">بن جرير</option>
-                      <option value="بن الطاهر">بن الطاهر</option>
-                      <option value="بن يخلف">بن يخلف</option>
-                      <option value="بني ملال">بني ملال</option>
-                      <option value="بن سليمان">بن سليمان</option>
-                      <option value="بركان">بركان</option>
-                      <option value="برشيد">برشيد</option>
-                      <option value="بحاليل">بحاليل</option>
-                      <option value="بيوگرا">بيوگرا</option>
-                      <option value="بني أنصار">بني أنصار</option>
-                      <option value="بني بوعياش">بني بوعياش</option>
-                      <option value="بني شيكر">بني شيكر</option>
-                      <option value="بني درار">بني درار</option>
-                      <option value="بني حديفة">بني حديفة</option>
-                      <option value="بني تجيت">بني تجيت</option>
-                      <option value="بوعنان">بوعنان</option>
-                      <option value="بوعرفة">بوعرفة</option>
-                      <option value="بودنيب">بودنيب</option>
-                      <option value="بوگدرة">بوگدرة</option>
-                      <option value="بوهديلة">بوهديلة</option>
-                      <option value="بويزكارن">بويزكارن</option>
-                      <option value="بوجدور">بوجدور</option>
-                      <option value="بوجنيبة">بوجنيبة</option>
-                      <option value="بولانوار">بولانوار</option>
-                      <option value="بولمان">بولمان</option>
-                      <option value="بولمان الدادس">بولمان الدادس</option>
-                      <option value="بومية">بومية</option>
-                      <option value="بوسكورة">بوسكورة</option>
-                      <option value="بوزنيقة">بوزنيقة</option>
-                      <option value="بوزتات">بوزتات</option>
-                      <option value="برادية">برادية</option>
-                      <option value="بريكشة">بريكشة</option>
-                      <option value="بزو">بزو</option>
-                      <option value="الدار البيضاء">الدار البيضاء</option>
-                      <option value="شفشاون">شفشاون</option>
-                      <option value="شيشاوة">شيشاوة</option>
-                      <option value="الداخلة">الداخلة</option>
-                      <option value="دار بني كريش">دار بني كريش</option>
-                      <option value="دار الشاوي">دار الشاوي</option>
-                      <option value="دار الكبداني">دار الكبداني</option>
-                      <option value="دار الواعري">دار الواعري</option>
-                      <option value="دار ولد زيدوه">دار ولد زيدوه</option>
-                      <option value="الدشيرة الجهادية">الدشيرة الجهادية</option>
-                      <option value="دبدو">دبدو</option>
-                      <option value="دمنات">دمنات</option>
-                      <option value="دروة">دروة</option>
-                      <option value="دراركة">دراركة</option>
-                      <option value="الفقيه بن صالح">الفقيه بن صالح</option>
-                      <option value="فجيج">فجيج</option>
-                      <option value="فكيك">فكيك</option>
-                      <option value="فاس">فاس</option>
-                      <option value="فاس المكناس">فاس المكناس</option>
-                      <option value="فگيغ">فگيغ</option>
-                      <option value="فگيك">فگيك</option>
-                      <option value="فگيگ">فگيگ</option>
-                      <option value="فگيق">فگيق</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگيغة">فگيغة</option>
-                      <option value="فگيكة">فگيكة</option>
-                      <option value="فگيگة">فگيگة</option>
-                      <option value="فگيقة">فگيقة</option>
-                      <option value="فگيتة">فگيتة</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگوغتة">فگوغتة</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگيتة">فگيتة</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="فگوغة">فگوغة</option>
-                      <option value="فگيت">فگيت</option>
-                      <option value="فگوغ">فگوغ</option>
-                      <option value="گنتور">گنتور</option>
-                      <option value="گرفاية">گرفاية</option>
-                      <option value="گلميم">گلميم</option>
-                      <option value="گرسيف">گرسيف</option>
-                      <option value="گزناية">گزناية</option>
-                      <option value="گيگو">گيگو</option>
-                      <option value="گيسر">گيسر</option>
-                      <option value="حد بوحسوسن">حد بوحسوسن</option>
-                      <option value="حد كورت">حد كورت</option>
-                      <option value="حد وادي إفران">حد وادي إفران</option>
-                      <option value="حاج قدور">حاج قدور</option>
-                      <option value="الحطان">الحطان</option>
-                      <option value="الحوارة">الحوارة</option>
-                      <option value="إفران أطلس الصغير">إفران أطلس الصغير</option>
-                      <option value="إفران">إفران</option>
-                      <option value="إغود">إغود</option>
-                      <option value="إهدادن">إهدادن</option>
-                      <option value="إمنتانوت">إمنتانوت</option>
-                      <option value="إموزار قندر">إموزار قندر</option>
-                      <option value="إموزار مرموشة">إموزار مرموشة</option>
-                      <option value="إمزورن">إمزورن</option>
-                      <option value="إنزگان">إنزگان</option>
-                      <option value="إرھرم">إرھرم</option>
-                      <option value="إيساغون">إيساغون</option>
-                      <option value="إتزر">إتزر</option>
-                      <option value="جعادر">جعادر</option>
-                      <option value="جماعة الشايم">جماعة الشايم</option>
-                      <option value="جبھا">جبھا</option>
-                      <option value="جرادة">جرادة</option>
-                      <option value="جرف">جرف</option>
-                      <option value="جرف الملحة">جرف الملحة</option>
-                      <option value="قلعة مكونة">قلعة مكونة</option>
-                      <option value="قاريا">قاريا</option>
-                      <option value="قاريا">قاريا</option>
-                      <option value="قاريا با محمد">قاريا با محمد</option>
-                      <option value="قاريا الركمان">قاريا الركمان</option>
-                      <option value="القصبة تادلة">القصبة تادلة</option>
-                      <option value="قصيطة">قصيطة</option>
-                      <option value="كتارة">كتارة</option>
-                      <option value="كهف النصور">كهف النصور</option>
-                      <option value="القنيطرة">القنيطرة</option>
-                      <option value="كرونة">كرونة</option>
-                      <option value="كروشن">كروشن</option>
-                      <option value="الخميس الساحل">الخميس الساحل</option>
-                      <option value="الخميسات">الخميسات</option>
-                      <option value="خنيفرة">خنيفرة</option>
-                      <option value="الخنيشات">الخنيشات</option>
-                      <option value="خريبڭة">خريبڭة</option>
-                      <option value="قصر الكبير">قصر الكبير</option>
-                      <option value="لعونات">لعونات</option>
-                      <option value="العكارطة">العكارطة</option>
-                      <option value="العطاوية">العطاوية</option>
-                      <option value="العيون">العيون</option>
-                      <option value="الكويرة">الكويرة</option>
-                      <option value="الخصاص">الخصاص</option>
-                      <option value="الحراوية">الحراوية</option>
-                      <option value="لالة ميمونة">لالة ميمونة</option>
-                      <option value="لالة تكركوست">لالة تكركوست</option>
-                      <option value="العرائش">العرائش</option>
-                      <option value="الكوابلية">الكوابلية</option>
-                      <option value="لبير الجديد">لبير الجديد</option>
-                      <option value="لواليدية">لواليدية</option>
-                      <option value="لولاد">لولاد</option>
-                      <option value="القليعة">القليعة</option>
-                      <option value="معازيز">معازيز</option>
-                      <option value="مادغ">مادغ</option>
-                      <option value="مراكش">مراكش</option>
-                      <option value="مرتيل">مرتيل</option>
-                      <option value="ماسة">ماسة</option>
-                      <option value="ماطماطة">ماطماطة</option>
-                      <option value="مضيق">مضيق</option>
-                      <option value="مديونة">مديونة</option>
-                      <option value="مشرع بل قصري">مشرع بل قصري</option>
-                      <option value="مهدية">مهدية</option>
-                      <option value="مكناس">مكناس</option>
-                      <option value="المحايا">المحايا</option>
-                      <option value="ميدار">ميدار</option>
-                      <option value="ميدلت">ميدلت</option>
-                      <option value="ميسور">ميسور</option>
-                      <option value="المحمدية">المحمدية</option>
-                      <option value="مقريصيت">مقريصيت</option>
-                      <option value="مولاي عبد الله">مولاي عبد الله</option>
-                      <option value="مولاي علي الشريف">مولاي علي الشريف</option>
-                      <option value="مولاي بوعزة">مولاي بوعزة</option>
-                      <option value="مولاي بوسلهام">مولاي بوسلهام</option>
-                      <option value="مولاي إبراهيم">مولاي إبراهيم</option>
-                      <option value="مولاي إدريس زرهون">مولاي إدريس زرهون</option>
-                      <option value="مريرت">مريرت</option>
-                      <option value="الناظور">الناظور</option>
-                      <option value="نعيمة">نعيمة</option>
-                      <option value="النواصر">النواصر</option>
-                      <option value="واليديا">واليديا</option>
-                      <option value="واوزيغت">واوزيغت</option>
-                      <option value="ورزازات">ورزازات</option>
-                      <option value="واد امليل">واد امليل</option>
-                      <option value="واد هيمر">واد هيمر</option>
-                      <option value="واد لاو">واد لاو</option>
-                      <option value="واد زم">واد زم</option>
-                      <option value="وزان">وزان</option>
-                      <option value="ويسلان">ويسلان</option>
-                      <option value="وجدة">وجدة</option>
-                      <option value="ولاد عبو">ولاد عبو</option>
-                      <option value="ولاد عمران">ولاد عمران</option>
-                      <option value="ولاد عياد">ولاد عياد</option>
-                      <option value="ولاد برهيل">ولاد برهيل</option>
-                      <option value="ولاد فرج">ولاد فرج</option>
-                      <option value="ولاد غضبان">ولاد غضبان</option>
-                      <option value="ولاد حريز الساحل">ولاد حريز الساحل</option>
-                      <option value="ولاد مبارك">ولاد مبارك</option>
-                      <option value="ولاد مراح">ولاد مراح</option>
-                      <option value="ولاد سعيد">ولاد سعيد</option>
-                      <option value="ولاد طيب">ولاد طيب</option>
-                      <option value="ولاد تايمة">ولاد تايمة</option>
-                      <option value="ولاد يايش">ولاد يايش</option>
-                      <option value="ولاد زبير">ولاد زبير</option>
-                      <option value="ولماس">ولماس</option>
-                      <option value="أم الگردان">أم الگردان</option>
-                      <option value="أوناكة">أوناكة</option>
-                      <option value="أوطاط الحاج">أوطاط الحاج</option>
-                      <option value="الرباط">الرباط</option>
-                      <option value="رأس العين">رأس العين</option>
-                      <option value="رأس الماء">رأس الماء</option>
-                      <option value="ريبات الخير">ريبات الخير</option>
-                      <option value="ريصاني">ريصاني</option>
-                      <option value="الرماني">الرماني</option>
-                      <option value="سبع أيون">سبع أيون</option>
-                      <option value="أسفي">أسفي</option>
-                      <option value="السعيدية">السعيدية</option>
-                      <option value="سلا">سلا</option>
-                      <option value="سبت الگردان">سبت الگردان</option>
-                      <option value="سبت المعاريف">سبت المعاريف</option>
-                      <option value="سبت كزولة">سبت كزولة</option>
-                      <option value="سبت جهجوه">سبت جهجوه</option>
-                      <option value="صفرو">صفرو</option>
-                      <option value="سلوان">سلوان</option>
-                      <option value="السمارة">السمارة</option>
-                      <option value="سطات">سطات</option>
-                      <option value="سيدي المختار">سيدي المختار</option>
-                      <option value="سيدي زوين">سيدي زوين</option>
-                      <option value="سيدي عبد الله غيات">سيدي عبد الله غيات</option>
-                      <option value="سيدي عدي">سيدي عدي</option>
-                      <option value="سيدي أحمد">سيدي أحمد</option>
-                      <option value="سيدي علي بن حمدوش">سيدي علي بن حمدوش</option>
-                      <option value="سيدي علال البحراوي">سيدي علال البحراوي</option>
-                      <option value="سيدي علال التازي">سيدي علال التازي</option>
-                      <option value="سيدي بنور">سيدي بنور</option>
-                      <option value="سيدي بوعثمان">سيدي بوعثمان</option>
-                      <option value="سيدي بوبكر">سيدي بوبكر</option>
-                      <option value="سيدي بوكنادل">سيدي بوكنادل</option>
-                      <option value="سيدي بوزيد">سيدي بوزيد</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي حجاج واد حسار">سيدي حجاج واد حسار</option>
-                      <option value="سيدي إفني">سيدي إفني</option>
-                      <option value="سيدي جابر">سيدي جابر</option>
-                      <option value="سيدي كنكوش">سيدي كنكوش</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي اليماني">سيدي اليماني</option>
-                      <option value="سيدي محمد بن علي">سيدي محمد بن علي</option>
-                      <option value="سيدي رحال">سيدي رحال</option>
-                      <option value="سيدي رحال الشطاي">سيدي رحال الشطاي</option>
-                      <option value="سيدي سليمان">سيدي سليمان</option>
-                      <option value="سيدي سليمان الشراع">سيدي سليمان الشراع</option>
-                      <option value="سيدي سليمان الجبيل">سيدي سليمان الجبيل</option>
-                      <option value="سيدي سليمان التازي">سيدي سليمان التازي</option>
-                      <option value="سيدي إسماعيل">سيدي إسماعيل</option>
-                      <option value="سيدي طيبي">سيدي طيبي</option>
-                      <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
-                      <option value="سيدي يوسف بن أحمد">سيدي يوسف بن أحمد</option>
-                      <option value="سيدي يوسف بن علي">سيدي يوسف بن علي</option>
-                      <option value="سيدي يوسف بن حسن">سيدي يوسف بن حسن</option>
-                      <option value="سيدي يوسف مختار">سيدي يوسف مختار</option>
-                      <option value="سجلماسة">سجلماسة</option>
-                      <option value="سيدي بوهريا">سيدي بوهريا</option>
-                      <option value="الصخيرات">الصخيرات</option>
-                      <option value="سخور الرحامنة">سخور الرحامنة</option>
-                      <option value="سيدي علال التازي">سيدي علال التازي</option>
-                      <option value="سيدي بنور">سيدي بنور</option>
-                      <option value="سيدي بوعثمان">سيدي بوعثمان</option>
-                      <option value="سيدي بوزيد">سيدي بوزيد</option>
-                      <option value="سيدي حجاج واد حسار">سيدي حجاج واد حسار</option>
-                      <option value="سيدي إفني">سيدي إفني</option>
-                      <option value="سيدي جابر">سيدي جابر</option>
-                      <option value="سيدي كنكوش">سيدي كنكوش</option>
-                      <option value="سيدي قاسم">سيدي قاسم</option>
-                      <option value="سيدي اليماني">سيدي اليماني</option>
-                      <option value="سيدي محمد بن علي">سيدي محمد بن علي</option>
-                      <option value="سيدي رحال">سيدي رحال</option>
-                      <option value="سيدي رحال الشطاي">سيدي رحال الشطاي</option>
-                      <option value="سيدي سليمان">سيدي سليمان</option>
-                      <option value="سيدي سليمان الشراع">سيدي سليمان الشراع</option>
-                      <option value="سيدي سليمان الجبيل">سيدي سليمان الجبيل</option>
-                      <option value="سيدي سليمان التازي">سيدي سليمان التازي</option>
-                      <option value="سيدي إسماعيل">سيدي إسماعيل</option>
-                      <option value="سيدي طيبي">سيدي طيبي</option>
-                      <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
-                      <option value="سيدي يوسف بن أحمد">سيدي يوسف بن أحمد</option>
-                      <option value="سيدي يوسف بن علي">سيدي يوسف بن علي</option>
-                      <option value="سيدي يوسف بن حسن">سيدي يوسف بن حسن</option>
-                      <option value="سيدي يوسف مختار">سيدي يوسف مختار</option>
-                      <option value="سجلماسة">سجلماسة</option>
-                      <option value="سيدي بوهريا">سيدي بوهريا</option>
-                      <option value="الصخيرات">الصخيرات</option>
-                      <option value="سخور الرحامنة">سخور الرحامنة</option>
-                      <option value="السميمو">السميمو</option>
-                      <option value="السوالم">السوالم</option>
-                      <option value="سوق الأربعاء">سوق الأربعاء</option>
-                      <option value="سوق الأربعاء">سوق الأربعاء</option>
-                      <option value="سوق سبت أولاد النمة">سوق سبت أولاد النمة</option>
-                      <option value="سوق تلتة زمامرة">سوق تلتة زمامرة</option>
-                      <option value="سري كنا">سري كنا</option>
-                      <option value="سيدي سليمان مول الكيفان">سيدي سليمان مول الكيفان</option>
-                      <option value="تادرت">تادرت</option>
-                      <option value="تاغجيجت">تاغجيجت</option>
-                      <option value="تحالة">تحالة</option>
-                      <option value="تحناوت">تحناوت</option>
-                      <option value="تاينست">تاينست</option>
-                      <option value="تالوين">تالوين</option>
-                      <option value="تالمست">تالمست</option>
-                      <option value="تمنار">تمنار</option>
-                      <option value="تاموروت">تاموروت</option>
-                      <option value="طانطان">طانطان</option>
-                      <option value="تانالت">تانالت</option>
-                      <option value="طنجة">طنجة</option>
-                      <option value="تاونات">تاونات</option>
-                      <option value="تاوريرت">تاوريرت</option>
-                      <option value="تارودانت">تارودانت</option>
-                      <option value="تارودانت">تارودانت</option>
-                      <option value="طاطا">طاطا</option>
-                      <option value="تازوتة">تازوتة</option>
-                      <option value="تازارين">تازارين</option>
-                      <option value="تندرارة">تندرارة</option>
-                      <option value="تطوان">تطوان</option>
-                      <option value="ثر سوق">ثر سوق</option>
-                      <option value="تيشوت">تيشوت</option>
-                      <option value="تيداز">تيداز</option>
-                      <option value="تيفلت">تيفلت</option>
-                      <option value="تيفنيت">تيفنيت</option>
-                      <option value="تيفرة">تيفرة</option>
-                      <option value="تيفريت">تيفريت</option>
-                      <option value="تيغسالين">تيغسالين</option>
-                      <option value="تيغزة">تيغزة</option>
-                      <option value="تيمحديت">تيمحديت</option>
-                      <option value="تيموليلت">تيموليلت</option>
-                      <option value="تنجداد">تنجداد</option>
-                      <option value="تزنيت">تزنيت</option>
-                      <option value="تيزگيت">تيزگيت</option>
-                      <option value="تيزي واصلي">تيزي واصلي</option>
-                      <option value="تيزي وزو">تيزي وزو</option>
-                      <option value="تلتة توفيق">تلتة توفيق</option>
-                      <option value="تنين شتوكة">تنين شتوكة</option>
-                      <option value="تنين أوريكة">تنين أوريكة</option>
-                      <option value="توارگة">توارگة</option>
-                      <option value="تويمة">تويمة</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تولكرم">تولكرم</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تولال">تولال</option>
-                      <option value="تومليلين">تومليلين</option>
-                      <option value="تونفيت">تونفيت</option>
-                      <option value="زاكورة">زاكورة</option>
-                      <option value="زايو">زايو</option>
-                      <option value="زلاق">زلاق</option>
-                      <option value="زمامرة">زمامرة</option>
-                      <option value="زرهون">زرهون</option>
-                      <option value="زرهوني">زرهوني</option>
-                      <option value="زركتان">زركتان</option>
-                      <option value="زمران">زمران</option>
-                      <option value="زناتة">زناتة</option>
-                      <option value="زراردة">زراردة</option>
-                      <option value="زيرارة">زيرارة</option>
-                      <option value="زيوار">زيوار</option>
-                      <option value="زنادة">زنادة</option>
-                      <option value="الزومي">الزومي</option>
-                      <option value="زرويلة">زرويلة</option>
-                      <option value="زريزر">زريزر</option>
-                    </select>
+                  <input name="divorce_enf_date_naissance[]" class="form-control" type="date" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--birth day-->
-            <div class="form-group">
-              <label class="col-md-4 control-label">Date de Naissance</label>
-              <div class="col-md-4">
-                <div>
-                  <input name="divorce_enf_date_naissance" class="form-control" type="date" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -2972,7 +1744,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">رتبة</label>
               <div>
-                <select name="Grade_ar" id="grade_ar" class="formc1 right" readonly>
+                <select name="Grade_ar" id="grade_ar" class="formc1 right disabled-select" >
                   <option value=" ">رتبة</option>
                   <option value="متصرف من الدرجة الاولى">
                     متصرف من الدرجة الاولى
@@ -3124,7 +1896,7 @@
             <div class="col-md-4">
               <label class="col-md-4 control-label">Indice</label>
               <div>
-                <input name="indice" id="indice" placeholder="Indice" class="form-control1" type="text" required />
+                <input name="indice" id="indice" placeholder="Indice" class="form-control1 disabled-select" type="text" required />
               </div>
             </div>
 
@@ -3226,7 +1998,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">القسم</label>
               <div>
-                <select name="division_ar" id="division_ar" class="formc1 right" readonly>
+                <select name="division_ar" id="division_ar" class="formc1 righ disabled-select" >
                   <option value=" ">القسم</option>
                   <option value="قسم الشؤون التقنية والتعمير">
                     قسم الشؤون التقنية والتعمير
@@ -3289,7 +2061,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">المصلحة</label>
               <div>
-                <select name="service_ar" id="service_ar" class="formc1 right" readonly>
+                <select name="service_ar" id="service_ar" class="formc1 right disabled-select" >
                   <option value=" ">المصلحة</option>
                   <option value="مصلحة الأشغال والمحافظة على البيئة">
                     مصلحة الأشغال والمحافظة على البيئة
@@ -3392,7 +2164,7 @@
             <div class="col-md-4 right">
               <label class="col-md-4 control-label right">المكتب</label>
               <div>
-                <select name="bureau_ar" id="bureau_ar" class="formc1 right" readonly>
+                <select name="bureau_ar" id="bureau_ar" class="formc1 right disabled-select" >
                   <option value=" ">المكتب</option>
                   <option value="مكتب الأشغال">مكتب الأشغال</option>
                   <option value="مكتب الإنارة العمومية">

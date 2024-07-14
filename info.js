@@ -338,8 +338,10 @@ function checkNumberValidity(input) {
             } else if (echelon === "6") {
                 rsindice = "704";
             }
-        } else if (grade === "ingenieur en chef" || grade === "architecte chef") {
+        } 
         
+      }else if (grade === "ingenieur en chef" || grade === "architecte chef") {
+        console.log(grade);
             if (echelleSelect.value === "1er grade") {
                 if (echelon === "1") {
                     rsindice = "704";
@@ -367,7 +369,8 @@ function checkNumberValidity(input) {
                     rsindice = "990";
                 }
             }
-        } else if (grade === "adjoint technique 1er grade" || grade === "adjoint administratif 1er grade") {
+            
+      } else if (grade === "adjoint technique 1er grade" || grade === "adjoint administratif 1er grade") {
             rsechelle = "8";
             if (echelon === "1") {
                 rsindice = "207";
@@ -391,7 +394,7 @@ function checkNumberValidity(input) {
                 rsindice = "373";
             }
             document.getElementById('echelle').value = rsechelle;
-        } else if (grade === "adjoint technique 2eme grade" || grade === "adjoint administratif 2eme grade") {
+      } else if (grade === "adjoint technique 2eme grade" || grade === "adjoint administratif 2eme grade") {
             rsechelle = "6";
             if (echelon === "1") {
                 rsindice = "151";
@@ -415,7 +418,7 @@ function checkNumberValidity(input) {
                 rsindice = "262";
             }
             document.getElementById('echelle').value = rsechelle;
-        } else if (grade === "adjoint technique grade principal" || grade === "adjoint administratif grade principal") {
+      } else if (grade === "adjoint technique grade principal" || grade === "adjoint administratif grade principal") {
             rsechelle = "9";
             if (echelon === "1") {
                 rsindice = "235";
@@ -546,6 +549,7 @@ function checkNumberValidity(input) {
       } else if (grade === "veterinaire" || grade === "medecin") {
       
           if (echelleSelect.value === "1er grade") {
+            
               if (echelon === "1") {
                   rsindice = "509";
               } else if (echelon === "2") {
@@ -595,7 +599,7 @@ function checkNumberValidity(input) {
               }
           }
       }
-    }
+    
                     
   
           // Disable the Echelle select and Indice input if Grade is not empty
@@ -606,6 +610,13 @@ function checkNumberValidity(input) {
             // Enable the Echelle select and Indice input if Grade is empty
             indiceInput.readOnly = false;   
             echelleSelect.readOnly = false;     
+        }
+
+        if (grade === "adjoint technique 2eme grade" || grade === "technicien 4eme grade"|| grade === "technicien 3eme grade"|| grade === "technicien 2eme grade"|| grade === "technicien 1er grade"|| grade === "infirmier 1er grade"|| grade === "infirmier grade exceptionnel"|| grade === "infirmier grade principal"|| grade === "adjoint administratif 2eme grade"|| grade === "adjoint administratif 1er grade"||grade === "adjoint administratif grade principal"||grade === "adjoint technique 1er grade" ||grade === "adjoint technique grade principal" ||grade === "redacteur 4eme grade" ||grade === "redacteur 3eme grade" ||grade === "redacteur 2eme grade" ||grade === "redacteur 1er grade" ||grade === "administrateur adjoint mi" || grade === "administrateur principal mi" ||grade === "administrateur mi" || grade === "administrateur 1er grade" || grade === "administrateur 2eme grade" || grade === "administrateur 3eme grade") {
+            echelleSelect.classList.add("disabled-select"); 
+        }
+        else{
+            echelleSelect.classList.remove("disabled-select");
         }
         // Update the result element with the generated HTML
         document.getElementById('indice').value = rsindice;
@@ -1040,7 +1051,7 @@ gradefr.addEventListener('change', function() {
   const correspondingArabicOption = optionMapping[selectedFrenchOption];
   if (correspondingArabicOption) {
       gradear.value = correspondingArabicOption;
-      gradear.readOnly= true;
+ 
 
   } else {
       gradear.value = '';

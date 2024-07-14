@@ -1,6 +1,11 @@
 legend {
   text-align: center;
 }
+.disabled-select {
+  pointer-events: none; /* Disable mouse events */
+  opacity: 0.6; /* Reduce opacity to visually indicate disabled state */
+  background-color: #f0f0f0; /* Change background color to indicate disabled state */
+}
 .container {
     min-width: 992px !important;
   }
