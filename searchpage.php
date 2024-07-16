@@ -17,7 +17,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Hidden brand</a>
+        <a class="navbar-brand" href="#">Ressource Humaine</a>
 
         <div class="d-flex" role="search">
           <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search" />
@@ -207,22 +207,17 @@
        try {
           require_once 'bachend/database_connect.inc.php';
       // SQL queries to retrieve data from your tables
-      $sql1 = "SELECT * FROM `etat_civil`";
-      $sql2 = "SELECT * FROM `etat_admin`";
-      $sql3 = "SELECT * FROM `fonction`";
+      $sql1 = " SELECT `etat_civil`.*, `etat_admin`.*, `fonction`.*
+    FROM `etat_civil`
+    INNER JOIN `etat_admin` ON `etat_civil`.PPR = `etat_admin`.PPR
+    INNER JOIN `fonction` ON `etat_civil`.PPR = `fonction`.PPR 
+      ";
+
 
       // Execute queries
       $stmt1 = $cnx->query($sql1);
       $stmt1->execute();
       $result1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-
-      $stmt2 = $cnx->query($sql2);
-      $stmt2->execute();
-      $result2 = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-
-      $stmt3 = $cnx->query($sql3);
-      $stmt3->execute();
-      $result3 = $stmt3->fetchAll(PDO::FETCH_ASSOC);
 
       // Check if there are results and output data in HTML table rows
       foreach ($result1 as $row) {
@@ -240,11 +235,7 @@
               echo "<td>" . $row["Situation_Fam"] . "</td>";
               echo "<td>" . $row["Diplome"] . "</td>";
               echo "<td>" . $row["Specialite"] . "</td>";
-             
-          }
-      
-          foreach ($result2 as $row) {
-              
+
               echo "<td>" . $row["Date_Recrut"] . "</td>";
               echo "<td>" . $row["Grade"] . "</td>";
               echo "<td>" . $row["Grade_Ar"] . "</td>";
@@ -256,12 +247,9 @@
               echo "<td>" . $row["Position"] . "</td>";
               echo "<td>" . $row["Note"] . "</td>";
               echo "<td>" . $row["Date_Note"] . "</td>";
-              
-          }
+             
 
 
-      foreach ($result3 as $row) {
-              
               echo "<td>" . $row["Division"] . "</td>";
               echo "<td>" . $row["Division_Ar"] . "</td>";
               echo "<td>" . $row["Service"] . "</td>";
@@ -270,7 +258,9 @@
               echo "<td>" . $row["Bureau_Ar"] . "</td>";
               echo "<td>" . $row["Date_affect"] . "</td>";        
               echo "</tr>";
+
           }
+
 
         }
         catch(PDOException $e) {
