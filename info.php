@@ -16,7 +16,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Ressource Humaine</a>
+        <a class="navbar-brand" >Ressource Humaine</a>
+      </div>
+      <div>
+      <a href="searchpage.php" class="navbar-brand"> <i></i>Base de donnee</a>
+      <a href="conge.php" class="navbar-brand"> <i></i>Conge</a>
       </div>
     </div>
   </nav>
@@ -2228,7 +2232,7 @@
         <legend>
           <div>
             <button type="submit" class="btn1 btn-warning margin-top: 20px;" name="subm">
-              Confirm
+              Confirmer
             </button>
           </div>
         </legend>

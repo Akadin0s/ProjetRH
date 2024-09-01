@@ -78,10 +78,12 @@ if(isset($_POST["subm"])){
     !empty($specialite) ||!empty($date_recrutement) ||!empty($grade_fr) ||!empty($grade_ar) ||!empty($echelle) ||!empty($date_echelle) ||!empty($echelon) ||
     !empty($date_echelon) ||!empty($indice) ||!empty($position) ||!empty($note)||!empty($note_ann) ||!empty($division_fr) ||!empty($division_ar) ||!empty($service_fr)||!empty($service_ar) ||
     !empty($bureau_fr) ||!empty($bureau_ar) ||!empty($date_affectation) ) {
-        $sql = "INSERT INTO `etat_civil`(`CNIE`,`PPR`,`Prenom`,`Prenom_Ar`,`Nom`,`Nom_Ar`,`Sex`,`Sexe_Ar`,`Lieu_Nai`,`Date_Nai`,`Situation_Fam`,`Diplome`,`Specialite`) VALUES ('$cnie','$ppr','$prenom','$prenom_ar','$nom','$nom_ar','$sexe','$sexe_ar','$lieu_Nai_fr','$date_naissance','$situation_familiale','$diplome','$specialite');";
+        $nbr_jours_cong = 30;
+        $sql = "INSERT INTO `etat_civil`(`CNIE`,`PPR`,`Prenom`,`Prenom_Ar`,`Nom`,`Nom_Ar`,`Sex`,`Sexe_Ar`,`Lieu_Nai`,`Date_Nai`,`Situation_Fam`,`Diplome`,`Specialite`,`Nbr_jrs_cong`) VALUES ('$cnie','$ppr','$prenom','$prenom_ar','$nom','$nom_ar','$sexe','$sexe_ar','$lieu_Nai_fr','$date_naissance','$situation_familiale','$diplome','$specialite','$nbr_jours_cong');";
         $sth = $cnx->query($sql);
         // Assuming $note and $note_ann are arrays and have the same length
 if (is_array($note) && is_array($note_ann) && count($note) == count($note_ann)) {
+    
     $sql1 = "INSERT INTO `etat_admin` (`Date_Recrut`, `Grade`, `Grade_Ar`, `Echelle`, `Date_Echelle`, `Echelon`, `Date_Echelon`, `Indice`, `Position`, `Note`, `Date_Note`, `PPR`)
              VALUES (:Date_Recrut, :Grade, :Grade_Ar, :Echelle, :Date_Echelle, :Echelon, :Date_Echelon, :Indice, :Position, :Note, :Date_Note, :PPR)";
 

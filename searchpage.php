@@ -17,14 +17,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Ressource Humaine</a>
+        <a class="navbar-brand">Ressource Humaine</a>
+        
 
+
+        <div style="margin-right: -330px;">
+      <a href="info.php" class="navbar-brand"> <i></i>Ajoute de donnee</a>
+      <a href="conge.php" class="navbar-brand"> <i></i>Conge</a>
+      </div>
         <div class="d-flex" role="search">
-          <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search" />
+          <input class="form-control me-2" id="search" type="search" placeholder="............" aria-label="Search" />
           <button class="btn btn-outline-success" id="btsearch" type="submit">
-            Search
+            chercher
           </button>
         </div>
+
       </div>
     </div>
   </nav>
