@@ -66,7 +66,8 @@ function updateLeaveCalculation() {
     const daysRequested = parseInt(document.getElementById("daysRequested").value);
     const remainingDaysElement = document.getElementById("remainingDays");
     const endDateElement = document.getElementById("endDate");
-    const pprcode = document.getElementById("ppr");
+    const totalday = document.getElementById("nbr_jr");
+    const totaldays = totalday.value;
 
     if (isNaN(startDate) || isNaN(daysRequested) || daysRequested <= 0) {
         remainingDaysElement.textContent = "Please enter a valid start date and a positive number of leave days.";
@@ -76,11 +77,11 @@ function updateLeaveCalculation() {
 
     const endDate = calculateEndDate(startDate, daysRequested);
 
-    if (daysRequested > pprcode) {
+    if (daysRequested > totaldays) {
         remainingDaysElement.value = "Exceeded leave days";
         endDateElement.value = "";
     } else {
-        const remainingDays = pprcode - daysRequested;
+        const remainingDays = totaldays - daysRequested;
         remainingDaysElement.value = remainingDays;
         endDateElement.value = endDate.toISOString().split('T')[0];
     }

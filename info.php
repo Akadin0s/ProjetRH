@@ -19,8 +19,8 @@
         <a class="navbar-brand" >Ressource Humaine</a>
       </div>
       <div>
-      <a href="searchpage.php" class="navbar-brand"> <i></i>Base de donnee</a>
-      <a href="conge.php" class="navbar-brand"> <i></i>Conge</a>
+      <a href="searchpage.php" class="navbar-brand1"> <i></i>Base de donnee</a>
+      <a href="conge.php" class="navbar-brand1"> <i></i>Conge</a>
       </div>
     </div>
   </nav>

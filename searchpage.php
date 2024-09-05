@@ -22,8 +22,8 @@
 
 
         <div style="margin-right: -330px;">
-      <a href="info.php" class="navbar-brand"> <i></i>Ajoute de donnee</a>
-      <a href="conge.php" class="navbar-brand"> <i></i>Conge</a>
+      <a href="info.php" class="navbar-brand1"> <i></i>Ajoute de donnee</a>
+      <a href="conge.php" class="navbar-brand1"> <i></i>Conge</a>
       </div>
         <div class="d-flex" role="search">
           <input class="form-control me-2" id="search" type="search" placeholder="............" aria-label="Search" />

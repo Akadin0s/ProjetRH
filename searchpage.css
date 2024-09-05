@@ -10537,7 +10537,34 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+.navbar-brand1 {
+  display: inline-block;
+  padding-top: 0.2125rem;
+  padding-bottom: 0.2125rem;
+  margin-right: 10px;
+  font-size: 1rem;
+  
+  line-height: inherit;
+  white-space: nowrap;
+  transition: .5s;
+}
 
+.navbar-brand1:hover, .navbar-brand1:focus {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  
+}
+.navbar-light .navbar-brand1 {
+  color: rgba(0, 0, 0, 0.9);
+}
 
-   /*        boostrap css           */
+.navbar-light .navbar-brand1:hover, .navbar-light .navbar-brand1:focus {
+  color: rgba(0, 0, 0, 0.9);
+}
+.navbar-dark .navbar-brand1 {
+  color: #fff;
+}
+
+.navbar-dark .navbar-brand1:hover, .navbar-dark .navbar-brand1:focus {
+  color: #fff;
+}
